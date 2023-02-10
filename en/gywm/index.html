@@ -13,7 +13,7 @@
     <meta name="renderer" content="webkit" />
     <meta name="applicable-device" content="pc" />
     <meta http-equiv="Cache-Control" content="no-transform" />
-    <title>联系我们_碧龙旅游用品有限公司</title>
+    <title>Bi Long Travel Products Co.,Ltd</title>
     <link rel="icon" href="/Content/images/favicon.ico" />
     <link rel="shortcut icon" href="/Content/images/favicon.ico" />
     <link rel="bookmark" href="/Content/images/favicon.ico" />
@@ -34,10 +34,8 @@
     <link href="https://ntemimg.wezhan.cn/Designer/Content/base/css/antChain.css?_version=20221109114318"
         rel="stylesheet" type="text/css" />
 
-
-
     <link
-        href="//ntemimg.wezhan.cn/prevsf/10266/10266480/css/162_Pc_zh-CN.css?preventCdnCacheSeed=e2ce1151fa034b43b24fc4131c10078f"
+        href="//ntemimg.wezhan.cn/prevsf/10266/10266480/css/158_Pc_zh-CN.css?preventCdnCacheSeed=3e78a3e0ef6f4506a712b1cd23c53687"
         rel="stylesheet" />
     <script src="https://ntemimg.wezhan.cn/Scripts/JQuery/jquery-1.10.2.min.js?_version=20221109114319"
         type="text/javascript"></script>
@@ -74,266 +72,10 @@
 
 <body id="smart-body" area="main">
 
-    <!-- <input type="hidden" id="pageinfo" value="162" data-type="1" data-device="Pc" data-entityid="162" />
-    <input id="txtDeviceSwitchEnabled" value="show" type="hidden" />
-
-    <script type="text/javascript">
-        $(function () {
-
-            if ("" == "True") {
-                $('#mainContentWrapper').addClass('translate');
-                $('#antChainWrap').fadeIn(500);
-
-                $('#closeAntChain').off('click').on('click', function () {
-                    $('#antChainWrap').fadeOut('slow', function () {
-                        $('#mainContentWrapper').removeClass('translate');
-                    });
-                    $(document).off("scroll", isWatchScroll);
-
-                });
-                $('#showQrcodeBtn').off('click').on('click', function () {
-                    $('#qrCodeWrappper').toggleClass('qrCodeShow');
-                });
-                $(document).scroll(isWatchScroll)
-            }
-
-
-            function isWatchScroll() {
-                var scroH = $(document).scrollTop();
-                if (scroH >= 80) {
-                    $('#mainContentWrapper').removeClass('translate');
-                } else {
-                    $('#mainContentWrapper').addClass('translate');
-                }
-            }
-
-
-        })
-    </script>
-
-    <link href="https://ntemimg.wezhan.cn/Designer/Content/Language/Chinese/css/view.css?_version=20221109114318"
-        rel="stylesheet" type="text/css" />
-    <div class="m-deviceSwitch" style="display: none;">
-        <ul class="m-switch-ul f-clearfix">
-            <li class="m-switch-item" data-device="Pc">
-                <a href="javascript:void(0)" class="m-switch-link"><i class="icon icon-pc-black"></i></a>
-                <div class="lzprompt-plan" style="margin-left: -28px;"><span class="lzprompt-txt">点击预览PC版</span><span
-                        class="lzprompt-point lzprompt-point-bottom"></span></div>
-            </li>
-            <li class="m-switch-item" data-device="Mobile">
-                <a href="javascript:void(0)" class="m-switch-link"><i class="icon icon-mobile-black"></i></a>
-                <div class="lzprompt-plan" style="margin-left: -32px;"><span class="lzprompt-txt">点击预览手机版</span><span
-                        class="lzprompt-point lzprompt-point-bottom"></span></div>
-            </li>
-        </ul>
-    </div>
-    <input type="hidden" id="secUrl" />
-
-    <script type="text/javascript">
-        function initialDeviceSwitch() {
-            try {
-
-                $(".m-deviceSwitch").find("li[data-device=Pc]").removeClass("active").find("a").removeClass("z-current");
-                $(".m-deviceSwitch").find("li[data-device=Mobile]").removeClass("active").find("a").removeClass("z-current");
-
-                var pageinfo = $("#pageinfo");
-                var l = window.location;
-                if (pageinfo.length == 0 && window.frames.length > 0) {
-                    pageinfo = $(window.frames[0].document).find("#pageinfo");
-                    l = window.frames[0].document.location;
-
-
-                }
-                $(".m-deviceSwitch").show();
-                if (pageinfo.length == 0) {
-                    $(".m-deviceSwitch").hide();
-                    return;
-                }
-                $("#secUrl").attr("data-host", l.host).attr("data-pathname", l.pathname).attr("data-search", l.search).attr("data-hash", l.hash);
-                var pagedevice = pageinfo.attr("data-device");
-                $(".m-deviceSwitch").find("li[data-device=" + pagedevice + "]").addClass("active").find("a").addClass("z-current");
-                $(".m-deviceSwitch").find("li").not(".active").click(function () {
-                    var secUrl = $("#secUrl");
-                    var pathname = secUrl.attr("data-pathname");
-                    var search = secUrl.attr("data-search");
-                    var hash = secUrl.attr("data-hash");
-                    var npagedevice = $(this).attr("data-device");
-                    var flag = "yibu_IsMobileDevice=true";
-                    var mobileUrl = "";
-                    if (npagedevice == "Pc") {
-                        mobileUrl = mobileUrl + pathname + search.replace("deviceModel=mobile", "deviceModel=pc") + hash;
-                        mobileUrl = mobileUrl.replace("&" + flag, "").replace("?" + flag, "");
-                    } else if (npagedevice == "Mobile") {
-                        var toUrl = pathname + search.replace("deviceModel=pc", "deviceModel=mobile") + hash;
-                        toUrl = toUrl.replace("&" + flag, "").replace("?" + flag, "");
-                        //if (toUrl.indexOf("?") === -1) {
-                        //    toUrl += "?" + flag;
-                        //}
-                        //else {
-                        //    toUrl += "&" + flag;
-                        //}
-
-                        mobileUrl = mobileUrl + "/Runtime/MobileContainer?url=" + encodeURIComponent(toUrl) + "&" + flag;
-                    }
-                    $.ajax({
-                        cache: false,
-                        url: "/Common/ChangeRunTimeDeviceMode",
-                        type: "post",
-                        data: { type: "Pc" },
-                        dataType: "json",
-                        success: function (result) {
-                            if (result.IsSuccess) {
-                                window.top.location.href = mobileUrl;
-                            }
-                        },
-                        error: function () { }
-                    });
-                });
-            }
-            catch (e) {
-                $(".m-deviceSwitch").find("li[data-device=Mobile]").addClass("active").find("a").addClass("z-current");
-            }
-        }
-        $(function () {
-            if ($("#prevMainFrame").length > 0) {
-                $("#prevMainFrame").load(initialDeviceSwitch);
-            } else {
-                initialDeviceSwitch();
-            }
-        });
-    </script>
-    <style>
-        /*不可直接引用bootstarp,否则会对页面样式有影响*/
-        .alert {
-            padding: 15px;
-            margin-bottom: 20px;
-            border: 1px solid transparent;
-            border-radius: 4px
-        }
-
-        .alert-info {
-            color: #31708f;
-            background-color: #d9edf7;
-            border-color: #bce8f1
-        }
-
-        .alert-dismissable,
-        .alert-dismissible {
-            padding-right: 35px
-        }
-
-        .alert-dismissable .close,
-        .alert-dismissible .close {
-            position: relative;
-            top: -5px;
-            right: -21px;
-            color: inherit
-        }
-
-        button.close {
-            -webkit-appearance: none;
-            padding: 0;
-            cursor: pointer;
-            background: 0 0;
-            border: 0
-        }
-
-        .close {
-            float: right;
-            font-size: 21px;
-            font-weight: 700;
-            line-height: 1;
-            color: #000;
-            text-shadow: 0 1px 0 #fff;
-            filter: alpha(opacity=20);
-            opacity: .2
-        }
-    </style>
-    <script src="https://ntemimg.wezhan.cn/Designer/Content/js/bootstrap.min.js?_version=20221109114319"
-        type="text/javascript"></script>
-    <div id="deadlineTips" class="alert alert-info alert-dismissible"
-        style="margin-bottom: 0px; display: none; z-index: 2147483647; position: absolute; left: 0; right:0;"
-        role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"
-            onclick="sessionStorage.setItem('_ptk_','true')"><span aria-hidden="true">&times;</span></button>
-        <span
-            style="text-align: center; display: block; ">分享给他人？请复制当前浏览器地址分享给他人，他人浏览需进行安全验证，验证方式为您的手机号，请在<b>网站后台</b>进行<b>扫码关注绑定手机号</b>用以安全验证</span>
-    </div>
-    <script>
-        var token = "";
-
-        function FixHref() {
-            $(function () {
-                $("a[href]").each(function (a, b) {
-                    if (b.href.indexOf(location.host) !== -1 && b.href.indexOf("_ptk=") === -1) {
-                        //此处不能直接用b.href,否则会带上域名,导致导航条选中态异常
-                        var aHref = $(b).attr("href");
-                        var index = aHref.indexOf('#');
-                        if (index !== -1) {
-                            if (index === 0) {
-                                return;
-                            }
-                            else {
-                                var href = aHref.substr(0, index);
-                                aHref = href + (href.indexOf('?') === -1 ? "?" : "&") + "_ptk=" + token + aHref.substr(index);
-                            }
-                        }
-                        else {
-                            aHref = aHref + (aHref.indexOf('?') === -1 ? "?" : "&") + "_ptk=" + token;
-                        }
-                        $(b).attr("href", aHref);
-                    }
-                });
-                $("[data-url]").each(function (a, b) {
-                    var dataUrl = $(b).attr("data-url") || "";
-                    if (dataUrl.indexOf("http") !== 0 && dataUrl.indexOf("_ptk=") === -1) {
-                        var aHref = dataUrl;
-                        var index = aHref.indexOf('#');
-                        if (index !== -1) {
-                            if (index === 0) {
-                                return;
-                            }
-                            else {
-                                var href = aHref.substr(0, index);
-                                aHref = href + (href.indexOf('?') === -1 ? "?" : "&") + "_ptk=" + token + aHref.substr(index);
-                            }
-                        }
-                        else {
-                            aHref = aHref + (aHref.indexOf('?') === -1 ? "?" : "&") + "_ptk=" + token;
-                        }
-                        $(b).attr("data-url", aHref);
-                    }
-                });
-            });
-        }
-
-        function InIframe() {
-            try {
-                return window.self !== window.top;
-            } catch (e) {
-                return true;
-            }
-        }
-
-        function ShowTips() {
-            var val = sessionStorage.getItem("_ptk_");
-            if (!val && !InIframe()) {
-                $("#deadlineTips").show();
-            }
-        }
-        if (token) {
-            FixHref();
-            ShowTips();
-        }
-    </script> -->
-
-
     <div id="mainContentWrapper" style="background-color: transparent; background-image: none; background-repeat: no-repeat;background-position:0 0; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);;
      position: relative; width: 100%;min-width:1000px;background-size: auto;" bgScroll="none">
         <div style="background-color: rgb(0, 0, 0); background-image: none; background-repeat: no-repeat;background-position:0 0; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);;
          position: relative; width: 100%;min-width:1000px;background-size: auto;" bgScroll="none">
-
-            <!-- 导航栏 -->
             <div class=" header" cpid="216" id="smv_Area0"
                 style="width: 1000px; height: 90px;  position: relative; margin: 0 auto">
                 <div id="smv_tem_61_6" ctype="banner" class="esmartMargin smartAbs smartFixed   " cpid="216"
@@ -354,9 +96,9 @@
                                             </li>
                                             <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
                                                 <div class="w-nav-item">
-                                                    <a href="/" target="_self" class="w-nav-item-link">
+                                                    <a href="/en/" target="_self" class="w-nav-item-link">
                                                         <span class="mw-iconfont"></span>
-                                                        <span class="w-link-txt">首页</span>
+                                                        <span class="w-link-txt">Home</span>
                                                     </a>
                                                     <div class="sliding" style="width:20%;"></div>
                                                 </div>
@@ -364,9 +106,9 @@
                                             </li>
                                             <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
                                                 <div class="w-nav-item">
-                                                    <a href="/gywm" target="_self" class="w-nav-item-link">
+                                                    <a href="/en/gywm/" target="_self" class="w-nav-item-link">
                                                         <span class="mw-iconfont"></span>
-                                                        <span class="w-link-txt">关于我们</span>
+                                                        <span class="w-link-txt">About us</span>
                                                     </a>
                                                     <div class="sliding" style="width:20%;"></div>
                                                 </div>
@@ -374,36 +116,36 @@
                                             </li>
                                             <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
                                                 <div class="w-nav-item">
-                                                    <a href="/cpzx" target="_self" class="w-nav-item-link">
+                                                    <a href="/en/cpzx/" target="_self" class="w-nav-item-link">
                                                         <span class="mw-iconfont"></span>
-                                                        <span class="w-link-txt">产品中心</span>
+                                                        <span class="w-link-txt">Product</span>
                                                     </a>
                                                     <div class="sliding" style="width:20%;"></div>
                                                 </div>
 
                                             </li>
 
-                                            <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
-                                                <div class="w-nav-item">
-                                                    <a href="/lxwm" target="_self" class="w-nav-item-link">
-                                                        <span class="mw-iconfont"></span>
-                                                        <span class="w-link-txt">联系我们</span>
-                                                    </a>
-                                                    <div class="sliding" style="width:20%;"></div>
-                                                </div>
-
-                                            </li>
                                             <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
                                                 <div class="w-nav-item">
                                                     <a href="/en/lxwm/" target="_self" class="w-nav-item-link">
                                                         <span class="mw-iconfont"></span>
-                                                        <span class="w-link-txt">English</span>
+                                                        <span class="w-link-txt">Contact us</span>
                                                     </a>
                                                     <div class="sliding" style="width:20%;"></div>
                                                 </div>
 
                                             </li>
 
+                                            <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
+                                                <div class="w-nav-item">
+                                                    <a href="/gywm/" target="_self" class="w-nav-item-link">
+                                                        <span class="mw-iconfont"></span>
+                                                        <span class="w-link-txt">中文</span>
+                                                    </a>
+                                                    <div class="sliding" style="width:20%;"></div>
+                                                </div>
+
+                                            </li>
                                         </ul>
                                     </div>
                                     <script>
@@ -488,8 +230,6 @@
                     </div>
                 </div>
             </div>
-            <!-- 导航栏 -->
-
         </div>
         <div class="main-layout-wrapper" id="smv_AreaMainWrapper"
             style="background-color: rgb(255, 255, 255); background-image: none;
@@ -503,32 +243,31 @@
                     style="width: 100%; min-height: 300px; position: relative; ">
 
                     <div class="smvWrapper"
-                        style="min-width:1000px;  position: relative; background-color: transparent; background-image: none; background-repeat: no-repeat; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);;background-position:0 0;background-size:auto;"
+                        style="min-width:1000px;  position: relative; background-color: rgb(255, 255, 255); background-image: none; background-repeat: no-repeat; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);;background-position:0 0;background-size:auto;"
                         bgScroll="none">
-                        <div class="smvContainer" id="smv_Main" cpid="162"
-                            style="min-height:400px;width:1000px;height:867px;  position: relative; ">
-
-                            <!-- title -->
-                            <div id="smv_con_6_32" ctype="text" class="esmartMargin smartAbs " cpid="162"
-                                cstyle="Style1" ccolor="Item2" areaId="" isContainer="False" pvid="" tareaId=""
+                        <div class="smvContainer" id="smv_Main" cpid="158"
+                            style="min-height:400px;width:1000px;height:1031px;  position: relative; ">
+                            <div id="smv_con_3_41" ctype="text" class="esmartMargin smartAbs " cpid="158"
+                                cstyle="Style1" ccolor="Item2" areaId="Main" isContainer="False" pvid="" tareaId="Main"
                                 re-direction="all" daxis="All" isdeletable="True"
-                                style="height: 60px; width: 1000px; left: 0px; top: 466px;z-index:2;">
-                                <div class="yibuFrameContent con_6_32  text_Style1  " style="overflow:hidden;;">
-                                    <div id='txt_con_6_32' style="height: 100%;">
-                                        <div class="editableContent" id="txtc_con_6_32"
+                                style="height: 60px; width: 986px; left: 7px; top: 463px;z-index:2;">
+                                <div class="yibuFrameContent con_3_41  text_Style1  " style="overflow:hidden;;">
+                                    <div id='txt_con_3_41' style="height: 100%;">
+                                        <div class="editableContent" id="txtc_con_3_41"
                                             style="height: 100%; word-wrap:break-word;">
-                                            <p style="text-align:center"><span style="font-size:x-large">联系我们</span></p>
+                                            <p style="text-align:center"><span style="font-size:x-large">About us</span>
+                                            </p>
 
                                             <p style="text-align:center">&nbsp;</p>
 
-                                            <p style="text-align:center"><span style="font-size:14px">Contact us</span>
+                                            <p style="text-align:center"><span style="font-size:14px">About us</span>
                                             </p>
 
                                         </div>
                                     </div>
 
                                     <script>
-                                        var tables = $(' #smv_con_6_32').find('table')
+                                        var tables = $(' #smv_con_3_41').find('table')
                                         for (var i = 0; i < tables.length; i++) {
                                             var tab = tables[i]
                                             var borderWidth = $(tab).attr('border')
@@ -546,65 +285,106 @@
                                     </script>
                                 </div>
                             </div>
-                            <!-- title -->
-
-                            <!-- 地图 -->
-                            <div id="smv_con_7_24" ctype="map" class="esmartMargin smartAbs " cpid="162" cstyle="Style2"
-                                ccolor="Item0" areaId="" isContainer="False" pvid="" tareaId="" re-direction="all"
-                                daxis="All" isdeletable="True"
-                                style="height: 274px; width: 447px; left: 41px; top: 555px;z-index:6;">
-                                <div class="yibuFrameContent con_7_24  map_Style2  " style="overflow:visible;;">
-                                    <div class="mapItem">
-                                        <!-- <iframe id="con_7_24_mapFrame" src="/map.html" frameborder="0" height="100%"
-                                            width="100%" style="border:none;margin:0; "></iframe> -->
-                                        <iframe id="con_7_24_mapFrame"
-                                            src="https://1922985418rzv.scd.wezhan.cn/Designer/Common/BaiduMap2?showMapType=on&showNavigation=on&showMarker=on&zoom=14&mapStyle=normal&mapItems=[{&quot;ItemTitle&quot;:&quot;碧龙旅游用品有限公司&quot;,&quot;ItemDetail&quot;:&quot; &quot;,&quot;ProvinceName&quot;:&quot;江苏省&quot;,&quot;CityName&quot;:&quot;苏州市&quot;,&quot;Content&quot;:&quot;碧龙旅游用品有限公司&quot;,&quot;AdressDetail&quot;:&quot;江苏省苏州市碧龙旅游用品有限公司&quot;,&quot;DisplayOrder&quot;:1,&quot;MapSelectType&quot;:&quot;0&quot;,&quot;LngLat&quot;:null}]"
-                                            frameborder="0" height="100%" width="100%"
-                                            style="border:none;margin:0; "></iframe>
+                            <div id="smv_con_14_13" ctype="image" class="esmartMargin smartAbs " cpid="158"
+                                cstyle="Style1" ccolor="Item0" areaId="" isContainer="False" pvid="" tareaId=""
+                                re-direction="all" daxis="All" isdeletable="True"
+                                style="height: 353px; width: 454px; left: 540px; top: 576px;z-index:6;">
+                                <div class="yibuFrameContent con_14_13  image_Style1  " style="overflow:visible;;">
+                                    <div class="w-image-box image-clip-wrap" data-fillType="1" id="div_con_14_13">
+                                        <a target="_self">
+                                            <img src="/gywm/about.jpg" alt="1" title="1" id="img_smv_con_14_13"
+                                                style="width: 454px; height:353px;" class="">
+                                        </a>
                                     </div>
+
+                                    <script type="text/javascript">
+                                        $(function () {
+
+                                            InitImageSmv("con_14_13", "454", "353", "1");
+
+                                        });
+                                    </script>
+
                                 </div>
                             </div>
-                            <!-- 地图 -->
+                            <div id="smv_con_16_23" ctype="companyIntroduction" class="esmartMargin smartAbs "
+                                cpid="158" cstyle="Style1" ccolor="Item0" areaId="Main" isContainer="False" pvid=""
+                                tareaId="Main" re-direction="all" daxis="All" isdeletable="True"
+                                style="height: 410px; width: 500px; left: 11px; top: 576px;z-index:11;">
+                                <div class="yibuFrameContent con_16_23  companyIntroduction_Style1  "
+                                    style="overflow:hidden;;"><!--article info-->
+                                    <div class="w-info">
 
-                            <!-- 幻灯 -->
-                            <div id="smv_con_17_32" ctype="slideset" class="esmartMargin smartAbs " cpid="162"
+                                        <p>Suzhou BiLong Travel Products Co., LTD is a private enterprise with
+                                            professional production of various kinds of car covers, boat covers, tents,
+                                            bags and suitcases. The company was established in March 2011, with export
+                                            qualifications. It is located in the most developed region in China- the
+                                            Yangtze river delta economic circle hinterland with a beautiful environment
+                                            and convenient transportation.</p>
+                                        <p>Our company follows the "Quality first, mutual benefit and win-win
+                                            cooperation" business philosophy, adhering to the "based on domestic, facing
+                                            to the world" operating policy. Our company has hired professional technical
+                                            talents and management personnel with more than ten years of experience. The
+                                            annual output has reached 400000 units. Over the years, the company has
+                                            continued to pass the audit and certification of famous Chinese and foreign
+                                            companies and enterprises such as Shanghai Intertek, SGS, Wal - Mart, and
+                                            Warp, which means the quality of products has won the recognition of
+                                            domestic and foreign customers.</p>
+                                        <p>Our company is the production base for the brand "CLASSIC ACCESSORIES" which
+                                            has a series of car covers, boat covers and other related tourism supplies.
+                                            Products are up more than thousands of kinds of models, and product sales
+                                            are spread all over the world.</p>
+                                        <p>Based on the insistence on cooperating with large foreign businesses, our
+                                            company is bold in expanding domestic and foreign markets, actively
+                                            participating in international competition, constantly developing new
+                                            products and making up new customers to play an essential role of a leading
+                                            enterprise in this industry.</p>
+
+                                    </div>
+                                    <!--/article info-->
+                                </div>
+                            </div>
+
+                            <!-- slide -->
+                            <div id="smv_con_17_4" ctype="slideset" class="esmartMargin smartAbs " cpid="158"
                                 cstyle="Style1" ccolor="Item0" areaId="" isContainer="True" pvid="" tareaId=""
                                 re-direction="y" daxis="Y" isdeletable="True"
                                 style="height: 503px; width: 1000px; left: 0px; top: -90px;z-index:0;">
-                                <div class="yibuFrameContent con_17_32  slideset_Style1  " style="overflow:visible;;">
+                                <div class="yibuFrameContent con_17_4  slideset_Style1  " style="overflow:visible;;">
+
                                     <!--w-slide-->
-                                    <div id="lider_smv_con_17_32_wrapper">
-                                        <div class="w-slide" id="slider_smv_con_17_32">
+                                    <div id="lider_smv_con_17_4_wrapper">
+                                        <div class="w-slide" id="slider_smv_con_17_4">
                                             <div class="w-slide-inner" data-u="slides">
 
                                                 <div class="content-box" data-area="Area7962">
-                                                    <div id="smc_Area7962" cid="con_17_32"
+                                                    <div id="smc_Area7962" cid="con_17_4"
                                                         class="smAreaC slideset_AreaC">
-                                                        <div id="smv_con_18_32" ctype="area"
+                                                        <div id="smv_con_18_4" ctype="area"
                                                             smanim='{"delay":0.75,"duration":0.75,"direction":"","animationName":"zoomIn","infinite":"1"}'
-                                                            class="esmartMargin smartAbs animated" cpid="162"
+                                                            class="esmartMargin smartAbs animated" cpid="158"
                                                             cstyle="Style1" ccolor="Item0" areaId="Area7962"
-                                                            isContainer="True" pvid="con_17_32" tareaId="Area0"
+                                                            isContainer="True" pvid="con_17_4" tareaId="Area0"
                                                             re-direction="all" daxis="All" isdeletable="True"
                                                             style="height: 120px; width: 500px; left: 497px; top: 205px;z-index:2;">
-                                                            <div class="yibuFrameContent con_18_32  area_Style1  "
+                                                            <div class="yibuFrameContent con_18_4  area_Style1  "
                                                                 style="overflow:visible;;">
                                                                 <div class="w-container" data-effect-name="enterTop">
-                                                                    <div class="smAreaC" id="smc_Area0" cid="con_18_32">
-                                                                        <div id="smv_con_19_32" ctype="text"
-                                                                            class="esmartMargin smartAbs " cpid="162"
+                                                                    <div class="smAreaC" id="smc_Area0" cid="con_18_4">
+                                                                        <div id="smv_con_19_4" ctype="text"
+                                                                            class="esmartMargin smartAbs " cpid="158"
                                                                             cstyle="Style1" ccolor="Item3"
                                                                             areaId="Area0" isContainer="False"
-                                                                            pvid="con_18_32" tareaId="Area0"
+                                                                            pvid="con_18_4" tareaId="Area0"
                                                                             re-direction="all" daxis="All"
                                                                             isdeletable="True"
                                                                             style="height: 80px; width: 480px; left: 10px; top: 20px;z-index:2;">
-                                                                            <div class="yibuFrameContent con_19_32  text_Style1  "
+                                                                            <div class="yibuFrameContent con_19_4  text_Style1  "
                                                                                 style="overflow:hidden;;">
-                                                                                <div id='txt_con_19_32'
+                                                                                <div id='txt_con_19_4'
                                                                                     style="height: 100%;">
                                                                                     <div class="editableContent"
-                                                                                        id="txtc_con_19_32"
+                                                                                        id="txtc_con_19_4"
                                                                                         style="height: 100%; word-wrap:break-word;">
                                                                                         <p style="text-align:center">
                                                                                             <span
@@ -624,7 +404,7 @@
                                                                                 </div>
 
                                                                                 <script>
-                                                                                    var tables = $(' #smv_con_19_32').find('table')
+                                                                                    var tables = $(' #smv_con_19_4').find('table')
                                                                                     for (var i = 0; i < tables.length; i++) {
                                                                                         var tab = tables[i]
                                                                                         var borderWidth = $(tab).attr('border')
@@ -648,38 +428,38 @@
                                                         </div>
                                                     </div>
                                                     <div class="content-box-inner"
-                                                        style="background-image:url(//ntemimg.wezhan.cn/contents/sitefiles2002/10011529/images/-35763.jpg);background-position:50% 50%;background-repeat:cover;background-size:cover;background-color:;opacity:1">
+                                                        style="background-image:url(../../-35763.jpg);background-position:50% 50%;background-repeat:cover;background-size:cover;background-color:;opacity:1">
                                                     </div>
 
                                                 </div>
                                                 <div class="content-box" data-area="Area6116">
-                                                    <div id="smc_Area6116" cid="con_17_32"
+                                                    <div id="smc_Area6116" cid="con_17_4"
                                                         class="smAreaC slideset_AreaC">
-                                                        <div id="smv_con_20_32" ctype="area"
+                                                        <div id="smv_con_20_4" ctype="area"
                                                             smanim='{"delay":0.75,"duration":0.75,"direction":"","animationName":"zoomIn","infinite":"1"}'
-                                                            class="esmartMargin smartAbs animated" cpid="162"
+                                                            class="esmartMargin smartAbs animated" cpid="158"
                                                             cstyle="Style1" ccolor="Item0" areaId="Area6116"
-                                                            isContainer="True" pvid="con_17_32" tareaId="Area0"
+                                                            isContainer="True" pvid="con_17_4" tareaId="Area0"
                                                             re-direction="all" daxis="All" isdeletable="True"
-                                                            style="height: 122px; width: 550px; left: 0px; top: 200px;z-index:2;">
-                                                            <div class="yibuFrameContent con_20_32  area_Style1  "
+                                                            style="height: 133px; width: 550px; left: 1px; top: 194px;z-index:2;">
+                                                            <div class="yibuFrameContent con_20_4  area_Style1  "
                                                                 style="overflow:visible;;">
                                                                 <div class="w-container" data-effect-name="enterTop">
-                                                                    <div class="smAreaC" id="smc_Area0" cid="con_20_32">
-                                                                        <div id="smv_con_21_32" ctype="text"
-                                                                            class="esmartMargin smartAbs " cpid="162"
+                                                                    <div class="smAreaC" id="smc_Area0" cid="con_20_4">
+                                                                        <div id="smv_con_21_4" ctype="text"
+                                                                            class="esmartMargin smartAbs " cpid="158"
                                                                             cstyle="Style1" ccolor="Item3"
                                                                             areaId="Area0" isContainer="False"
-                                                                            pvid="con_20_32" tareaId="Area0"
+                                                                            pvid="con_20_4" tareaId="Area0"
                                                                             re-direction="all" daxis="All"
                                                                             isdeletable="True"
-                                                                            style="height: 42px; width: 530px; left: 10px; top: 16px;z-index:6;">
-                                                                            <div class="yibuFrameContent con_21_32  text_Style1  "
+                                                                            style="height: 50px; width: 530px; left: 10px; top: 15px;z-index:2;">
+                                                                            <div class="yibuFrameContent con_21_4  text_Style1  "
                                                                                 style="overflow:hidden;;">
-                                                                                <div id='txt_con_21_32'
+                                                                                <div id='txt_con_21_4'
                                                                                     style="height: 100%;">
                                                                                     <div class="editableContent"
-                                                                                        id="txtc_con_21_32"
+                                                                                        id="txtc_con_21_4"
                                                                                         style="height: 100%; word-wrap:break-word;">
                                                                                         <p style="text-align:center">
                                                                                             <span
@@ -692,7 +472,7 @@
                                                                                 </div>
 
                                                                                 <script>
-                                                                                    var tables = $(' #smv_con_21_32').find('table')
+                                                                                    var tables = $(' #smv_con_21_4').find('table')
                                                                                     for (var i = 0; i < tables.length; i++) {
                                                                                         var tab = tables[i]
                                                                                         var borderWidth = $(tab).attr('border')
@@ -710,15 +490,15 @@
                                                                                 </script>
                                                                             </div>
                                                                         </div>
-                                                                        <div id="smv_con_22_32" ctype="line"
-                                                                            class="esmartMargin smartAbs " cpid="162"
+                                                                        <div id="smv_con_22_4" ctype="line"
+                                                                            class="esmartMargin smartAbs " cpid="158"
                                                                             cstyle="Style1" ccolor="Item0"
                                                                             areaId="Area0" isContainer="False"
-                                                                            pvid="con_20_32" tareaId="Area0"
+                                                                            pvid="con_20_4" tareaId="Area0"
                                                                             re-direction="x" daxis="All"
                                                                             isdeletable="True"
-                                                                            style="height: 20px; width: 510px; left: 20px; top: 60px;z-index:3;">
-                                                                            <div class="yibuFrameContent con_22_32  line_Style1  "
+                                                                            style="height: 20px; width: 510px; left: 20px; top: 65px;z-index:3;">
+                                                                            <div class="yibuFrameContent con_22_4  line_Style1  "
                                                                                 style="overflow:visible;;">
                                                                                 <!-- w-line -->
                                                                                 <div
@@ -729,20 +509,20 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div id="smv_con_23_32" ctype="text"
-                                                                            class="esmartMargin smartAbs " cpid="162"
+                                                                        <div id="smv_con_23_4" ctype="text"
+                                                                            class="esmartMargin smartAbs " cpid="158"
                                                                             cstyle="Style1" ccolor="Item3"
                                                                             areaId="Area0" isContainer="False"
-                                                                            pvid="con_20_32" tareaId="Area0"
+                                                                            pvid="con_20_4" tareaId="Area0"
                                                                             re-direction="all" daxis="All"
                                                                             isdeletable="True"
-                                                                            style="height: 26px; width: 510px; left: 20px; top: 83px;z-index:4;">
-                                                                            <div class="yibuFrameContent con_23_32  text_Style1  "
+                                                                            style="height: 26px; width: 510px; left: 20px; top: 86px;z-index:4;">
+                                                                            <div class="yibuFrameContent con_23_4  text_Style1  "
                                                                                 style="overflow:hidden;;">
-                                                                                <div id='txt_con_23_32'
+                                                                                <div id='txt_con_23_4'
                                                                                     style="height: 100%;">
                                                                                     <div class="editableContent"
-                                                                                        id="txtc_con_23_32"
+                                                                                        id="txtc_con_23_4"
                                                                                         style="height: 100%; word-wrap:break-word;">
                                                                                         <p style="text-align:center">
                                                                                             <span
@@ -758,7 +538,7 @@
                                                                                 </div>
 
                                                                                 <script>
-                                                                                    var tables = $(' #smv_con_23_32').find('table')
+                                                                                    var tables = $(' #smv_con_23_4').find('table')
                                                                                     for (var i = 0; i < tables.length; i++) {
                                                                                         var tab = tables[i]
                                                                                         var borderWidth = $(tab).attr('border')
@@ -782,7 +562,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="content-box-inner"
-                                                        style="background-image:url(//ntemimg.wezhan.cn/contents/sitefiles2002/10011529/images/-35768.jpg);background-position:50% 50%;background-repeat:cover;background-size:cover;background-color:;opacity:1">
+                                                        style="background-image:url(../../-35768.jpg);background-position:50% 50%;background-repeat:cover;background-size:cover;background-color:;opacity:1">
                                                     </div>
 
                                                 </div>
@@ -795,11 +575,11 @@
 
                                             <!-- 1Arrow Navigator -->
                                             <span data-u="arrowleft" class="w-slide-arrowl  slideArrow  "
-                                                data-autocenter="2" id="left_con_17_32">
+                                                data-autocenter="2" id="left_con_17_4">
                                                 <i class="w-itemicon mw-iconfont">&#xb133;</i>
                                             </span>
                                             <span data-u="arrowright" class="w-slide-arrowr slideArrow "
-                                                data-autocenter="2" id="right_con_17_32">
+                                                data-autocenter="2" id="right_con_17_4">
                                                 <i class="w-itemicon mw-iconfont">&#xb132;</i>
                                             </span>
                                         </div>
@@ -807,31 +587,31 @@
 
                                     <!--/w-slide-->
                                     <script type="text/javascript">
-                                        var jssorCache_con_17_32 = {
-                                            CtrlId: "con_17_32",
-                                            SliderId: "slider_smv_con_17_32",
-                                            Html: $("#slider_smv_con_17_32")[0].outerHTML,
+                                        var jssorCache_con_17_4 = {
+                                            CtrlId: "con_17_4",
+                                            SliderId: "slider_smv_con_17_4",
+                                            Html: $("#slider_smv_con_17_4")[0].outerHTML,
                                         };
-                                        var slide_con_17_32;
-                                        var slideAnimation_con_17_32 = function (slideIndex, fromIndex) {
-                                            var $slideWrapper = $("#slider_smv_con_17_32 .w-slide-inner:last");
+                                        var slide_con_17_4;
+                                        var slideAnimation_con_17_4 = function (slideIndex, fromIndex) {
+                                            var $slideWrapper = $("#slider_smv_con_17_4 .w-slide-inner:last");
                                             var $fromSlide = $slideWrapper.find(".content-box:eq(" + fromIndex + ")");
                                             var $curSlide = $slideWrapper.find(".content-box:eq(" + slideIndex + ")");
                                             var $nextSlide = $slideWrapper.find(".content-box:eq(" + (slideIndex + 1) + ")");
-                                            $("#smv_con_17_32").attr("selectArea", $curSlide.attr("data-area"));
+                                            $("#smv_con_17_4").attr("selectArea", $curSlide.attr("data-area"));
 
                                             $slideWrapper.find(".animated").smanimate("stop");
                                             $fromSlide.find(".animated").smanimate("stop");
                                             $curSlide.find(".animated").smanimate("stop");
                                             $nextSlide.find(".animated").smanimate("stop");
-                                            $("#switch_con_17_32 .page").html(slideIndex + 1);
+                                            $("#switch_con_17_4 .page").html(slideIndex + 1);
                                             // debugger
                                             $curSlide.find(".animated").smanimate("replay");
                                             return false;
                                         }
-                                        con_17_32_page = 1;
-                                        con_17_32_sliderset3_init = function () {
-                                            var jssor_1_options_con_17_32 = {
+                                        con_17_4_page = 1;
+                                        con_17_4_sliderset3_init = function () {
+                                            var jssor_1_options_con_17_4 = {
                                                 $AutoPlay: "False" == "True" ? false : "off" == "on",//自动播放
                                                 $PlayOrientation: 1,//2为向上滑，1为向左滑
                                                 $Loop: 1,//循环
@@ -855,34 +635,34 @@
                                             };
 
                                             //初始化幻灯
-                                            var slide = slide_con_17_32 = new $JssorSlider$("slider_smv_con_17_32", jssor_1_options_con_17_32);
+                                            var slide = slide_con_17_4 = new $JssorSlider$("slider_smv_con_17_4", jssor_1_options_con_17_4);
                                             if (typeof (LayoutConverter) !== "undefined") {
-                                                jssorCache_con_17_32.JssorOpt = jssor_1_options_con_17_32,
-                                                    jssorCache_con_17_32.Jssor = slide;
+                                                jssorCache_con_17_4.JssorOpt = jssor_1_options_con_17_4,
+                                                    jssorCache_con_17_4.Jssor = slide;
                                             }
-                                            $('#smv_con_17_32').data('jssor_slide', slide);
+                                            $('#smv_con_17_4').data('jssor_slide', slide);
 
                                             //resize游览器的时候触发自动缩放幻灯秀
                                             //幻灯栏目自动或手动切换时触发的事件
-                                            slide.$On($JssorSlider$.$EVT_PARK, slideAnimation_con_17_32);
+                                            slide.$On($JssorSlider$.$EVT_PARK, slideAnimation_con_17_4);
                                             //切换栏点击事件
-                                            $("#switch_con_17_32 .left").unbind("click").click(function () {
-                                                if (con_17_32_page == 1) {
-                                                    con_17_32_page = 2;
+                                            $("#switch_con_17_4 .left").unbind("click").click(function () {
+                                                if (con_17_4_page == 1) {
+                                                    con_17_4_page = 2;
                                                 } else {
-                                                    con_17_32_page = con_17_32_page - 1;
+                                                    con_17_4_page = con_17_4_page - 1;
                                                 }
-                                                $("#switch_con_17_32 .page").html(con_17_32_page);
+                                                $("#switch_con_17_4 .page").html(con_17_4_page);
                                                 slide.$Prev();
                                                 return false;
                                             });
-                                            $("#switch_con_17_32 .right").unbind("click").click(function () {
-                                                if (con_17_32_page == 2) {
-                                                    con_17_32_page = 1;
+                                            $("#switch_con_17_4 .right").unbind("click").click(function () {
+                                                if (con_17_4_page == 2) {
+                                                    con_17_4_page = 1;
                                                 } else {
-                                                    con_17_32_page = con_17_32_page + 1;
+                                                    con_17_4_page = con_17_4_page + 1;
                                                 }
-                                                $("#switch_con_17_32 .page").html(con_17_32_page);
+                                                $("#switch_con_17_4 .page").html(con_17_4_page);
                                                 slide.$Next();
                                                 return false;
                                             });
@@ -891,12 +671,12 @@
 
                                         $(function () {
 
-                                            var jssorCopyTmp = document.getElementById('slider_smv_con_17_32').cloneNode(true);
+                                            var jssorCopyTmp = document.getElementById('slider_smv_con_17_4').cloneNode(true);
 
                                             var $jssorIntt = function (skipInit) {
 
                                                 //获取幻灯显示动画类型
-                                                var $this = $('#slider_smv_con_17_32');
+                                                var $this = $('#slider_smv_con_17_4');
                                                 var dh = $(document).height();
                                                 var wh = $(window).height();
                                                 var ww = $(window).width();
@@ -928,24 +708,24 @@
                                                 $this.children().not(".slideArrow").css({ "width": $this.width() });
 
                                                 if (!skipInit) {
-                                                    con_17_32_sliderset3_init();
+                                                    con_17_4_sliderset3_init();
                                                 }
 
 
-                                                var areaId = $("#smv_con_17_32").attr("tareaid");
+                                                var areaId = $("#smv_con_17_4").attr("tareaid");
                                                 if (areaId == "") {
                                                     var mainWidth = $("#smv_Main").width();
-                                                    $("#smv_con_17_32 .slideset_AreaC").css({ "width": mainWidth + "px", "position": "relative", "margin": "0 auto" });
+                                                    $("#smv_con_17_4 .slideset_AreaC").css({ "width": mainWidth + "px", "position": "relative", "margin": "0 auto" });
                                                 } else {
-                                                    var controlWidth = $("#smv_con_17_32").width();
-                                                    $("#smv_con_17_32 .slideset_AreaC").css({ "width": controlWidth + "px", "position": "relative", "margin": "0 auto" });
+                                                    var controlWidth = $("#smv_con_17_4").width();
+                                                    $("#smv_con_17_4 .slideset_AreaC").css({ "width": controlWidth + "px", "position": "relative", "margin": "0 auto" });
                                                 }
-                                                $("#smv_con_17_32").attr("selectArea", "Area7962");
+                                                $("#smv_con_17_4").attr("selectArea", "Area7962");
 
-                                                var arrowHeight = $('#slider_smv_con_17_32 .w-slide-arrowl').eq(-1).outerHeight();
+                                                var arrowHeight = $('#slider_smv_con_17_4 .w-slide-arrowl').eq(-1).outerHeight();
                                                 var arrowTop = (18 - arrowHeight) / 2;
-                                                $('#slider_smv_con_17_32 .w-slide-arrowl').eq(-1).css('top', arrowTop);
-                                                $('#slider_smv_con_17_32 .w-slide-arrowr').eq(-1).css('top', arrowTop);
+                                                $('#slider_smv_con_17_4 .w-slide-arrowl').eq(-1).css('top', arrowTop);
+                                                $('#slider_smv_con_17_4 .w-slide-arrowr').eq(-1).css('top', arrowTop);
                                             }
                                             $jssorIntt();
 
@@ -953,13 +733,13 @@
                                             var ctime = null;
 
                                             function ScaleSlider() {
-                                                slide_con_17_32.$Off($JssorSlider$.$EVT_PARK, slideAnimation_con_17_32);
+                                                slide_con_17_4.$Off($JssorSlider$.$EVT_PARK, slideAnimation_con_17_4);
                                                 if (ctime) {
                                                     clearTimeout(ctime);
                                                     ctime = null;
                                                 }
                                                 ctime = setTimeout(function () {
-                                                    var inst = $('#slider_smv_con_17_32');
+                                                    var inst = $('#slider_smv_con_17_4');
                                                     var orginWidth = inst.width();
                                                     if (orginWidth == $(window).width()) return;
                                                     var inst_parent = inst.parent();
@@ -980,97 +760,19 @@
                                             }
 
                                             if (typeof (LayoutConverter) !== "undefined") {
-                                                jssorCache_con_17_32.ResizeFunc = $jssorIntt;
-                                                LayoutConverter.CtrlJsVariableList.push(jssorCache_con_17_32);
+                                                jssorCache_con_17_4.ResizeFunc = $jssorIntt;
+                                                LayoutConverter.CtrlJsVariableList.push(jssorCache_con_17_4);
                                             }
 
                                         });
                                     </script>
                                 </div>
                             </div>
-                            <!-- 幻灯 -->
-
-                            <!-- 联系信息 -->
-                            <div id="smv_con_24_26" ctype="companyinfo" class="esmartMargin smartAbs " cpid="162"
-                                cstyle="Style2" ccolor="Item0" areaId="" isContainer="False" pvid="" tareaId=""
-                                re-direction="all" daxis="All" isdeletable="True"
-                                style="height: 130px; width: 360px; left: 526px; top: 562px;z-index:9;">
-                                <div class="yibuFrameContent con_24_26  companyinfo_Style2  " style="overflow:hidden;;">
-                                    <ul class="w-company-info iconStyle1">
-                                        <li class="company-info-item">
-                                            <a href="javascript:void(0)">
-                                                <div class="company-info-titleBox">
-                                                    <span class="company-info-icon ">
-                                                        <i class="ltd-icon  gs-dizhi"></i>
-                                                    </span>
-                                                    <span class="company-info-title " style="white-space:pre">地址：</span>
-                                                </div>
-                                                <div class="company-text">
-                                                    <span class="company-info-text">江苏省苏州市吴江区平望镇平安村松桃线88号</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="company-info-item">
-                                            <a href="tel:400xxx8888">
-                                                <div class="company-info-titleBox">
-                                                    <span class="company-info-icon ">
-                                                        <i class="ltd-icon  gs-dianhua"></i>
-                                                    </span>
-                                                    <span class="company-info-title " style="white-space:pre">电话：</span>
-                                                </div>
-                                                <div class="company-text">
-                                                    <span class="company-info-text">0512-63670388</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="company-info-item">
-                                            <a href="javascript:void(0)">
-                                                <div class="company-info-titleBox">
-                                                    <span class="company-info-icon ">
-                                                        <i class="ltd-icon  gs-chuanzhen"></i>
-                                                    </span>
-                                                    <span class="company-info-title " style="white-space:pre">手机：</span>
-                                                </div>
-                                                <div class="company-text">
-                                                    <span class="company-info-text">+86-15722706450</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="company-info-item">
-                                            <a href="mailto:name@example.xxx">
-                                                <div class="company-info-titleBox">
-                                                    <span class="company-info-icon ">
-                                                        <i class="ltd-icon  gs-youxiang"></i>
-                                                    </span>
-                                                    <span class="company-info-title " style="white-space:pre">邮箱：</span>
-                                                </div>
-                                                <div class="company-text">
-                                                    <span
-                                                        class="company-info-text">lcm@szbknown.com、zsc@szbknown.com</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="smv_con_25_34" ctype="qrcode" class="esmartMargin smartAbs " cpid="162"
-                                cstyle="Style1" ccolor="Item0" areaId="" isContainer="False" pvid="" tareaId=""
-                                re-direction="all" daxis="All" isdeletable="True"
-                                style="height: 140px; width: 140px; left: 526px; top: 681px;z-index:10;">
-                                <div class="yibuFrameContent con_25_34  qrcode_Style1  " style="overflow:hidden;;">
-                                    <!--w-qrcode-->
-                                    <div class="w-qrcode" style="display: none;">
-                                        <img
-                                            src="/Designer/Common/RenderQRCode?content=//www.baidu.com/&width=140&height=140&colorName=000" />
-                                    </div>
-                                    <!--/w-qrcode-->
-                                </div>
-                            </div>
-                            <!-- 联系信息 -->
+                            <!-- slide -->
 
                         </div>
                     </div><input type='hidden' name='__RequestVerificationToken' id='token__RequestVerificationToken'
-                        value='cfKSwDoQ2eOUc7Mticf0S3Lx-vpztGACAdybh0M49cyGMn0ffXhbb381kMrZSPfR2WAQvL8Y2qdvlNa1QcIG35EUrA5lgj5QY2fFbfhNF9Y1' />
+                        value='SFNjrK6izQAPH4nHIXMRIDR8wrBFQ_X6dNtfOXKi9802LWjEpWQS2UNui6AR_STj3P6sUAPsEY9lTfZA77xQTQU4hkx0raLJp6fcYTi6awg1' />
                 </div>
             </div>
         </div>
@@ -1094,8 +796,8 @@
                                                 <span class="icon company-info-icon    mw-icon-hide ">
                                                     <i class="ltd-icon gs-gongsi"></i>
                                                 </span>
-                                                <span class="company-info-title" style="white-space:pre">版权所有：</span>
-                                                <span class="company-info-text">碧龙旅游用品有限公司</span>
+                                                <span class="company-info-title" style="white-space:pre">Copyright：</span>
+                                                <span class="company-info-text">Bi Long Travel Products Co.,Ltd</span>
                                             </a>
                                         </span>
                                     </div>
@@ -1183,7 +885,7 @@
     <script src="https://ntemimg.wezhan.cn/Designer/Scripts/Responsive/Plugins/modernizr.min.js?_version=20221109114319"
         type="text/javascript"></script>
     <script type="text/javascript"
-        src="https://ntemimg.wezhan.cn/Designer/Scripts/Responsive/CtrlAdjuster/ResponsiveJsLoader.js?_version=20230109185903&nonce=96b9db"
+        src="https://ntemimg.wezhan.cn/Designer/Scripts/Responsive/CtrlAdjuster/ResponsiveJsLoader.js?_version=20230109185903&nonce=a48be4"
         DynamicLoadPath="https://ntemimg.wezhan.cn/Designer/Scripts/Responsive/CtrlAdjuster/Core-Babeled.js?_version=20230109185903"></script>
 
 </body>

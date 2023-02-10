@@ -13,7 +13,7 @@
     <meta name="renderer" content="webkit" />
     <meta name="applicable-device" content="pc" />
     <meta http-equiv="Cache-Control" content="no-transform" />
-    <title>联系我们_碧龙旅游用品有限公司</title>
+    <title>Bi Long Travel Products Co.,Ltd</title>
     <link rel="icon" href="/Content/images/favicon.ico" />
     <link rel="shortcut icon" href="/Content/images/favicon.ico" />
     <link rel="bookmark" href="/Content/images/favicon.ico" />
@@ -74,260 +74,6 @@
 
 <body id="smart-body" area="main">
 
-    <!-- <input type="hidden" id="pageinfo" value="162" data-type="1" data-device="Pc" data-entityid="162" />
-    <input id="txtDeviceSwitchEnabled" value="show" type="hidden" />
-
-    <script type="text/javascript">
-        $(function () {
-
-            if ("" == "True") {
-                $('#mainContentWrapper').addClass('translate');
-                $('#antChainWrap').fadeIn(500);
-
-                $('#closeAntChain').off('click').on('click', function () {
-                    $('#antChainWrap').fadeOut('slow', function () {
-                        $('#mainContentWrapper').removeClass('translate');
-                    });
-                    $(document).off("scroll", isWatchScroll);
-
-                });
-                $('#showQrcodeBtn').off('click').on('click', function () {
-                    $('#qrCodeWrappper').toggleClass('qrCodeShow');
-                });
-                $(document).scroll(isWatchScroll)
-            }
-
-
-            function isWatchScroll() {
-                var scroH = $(document).scrollTop();
-                if (scroH >= 80) {
-                    $('#mainContentWrapper').removeClass('translate');
-                } else {
-                    $('#mainContentWrapper').addClass('translate');
-                }
-            }
-
-
-        })
-    </script>
-
-    <link href="https://ntemimg.wezhan.cn/Designer/Content/Language/Chinese/css/view.css?_version=20221109114318"
-        rel="stylesheet" type="text/css" />
-    <div class="m-deviceSwitch" style="display: none;">
-        <ul class="m-switch-ul f-clearfix">
-            <li class="m-switch-item" data-device="Pc">
-                <a href="javascript:void(0)" class="m-switch-link"><i class="icon icon-pc-black"></i></a>
-                <div class="lzprompt-plan" style="margin-left: -28px;"><span class="lzprompt-txt">点击预览PC版</span><span
-                        class="lzprompt-point lzprompt-point-bottom"></span></div>
-            </li>
-            <li class="m-switch-item" data-device="Mobile">
-                <a href="javascript:void(0)" class="m-switch-link"><i class="icon icon-mobile-black"></i></a>
-                <div class="lzprompt-plan" style="margin-left: -32px;"><span class="lzprompt-txt">点击预览手机版</span><span
-                        class="lzprompt-point lzprompt-point-bottom"></span></div>
-            </li>
-        </ul>
-    </div>
-    <input type="hidden" id="secUrl" />
-
-    <script type="text/javascript">
-        function initialDeviceSwitch() {
-            try {
-
-                $(".m-deviceSwitch").find("li[data-device=Pc]").removeClass("active").find("a").removeClass("z-current");
-                $(".m-deviceSwitch").find("li[data-device=Mobile]").removeClass("active").find("a").removeClass("z-current");
-
-                var pageinfo = $("#pageinfo");
-                var l = window.location;
-                if (pageinfo.length == 0 && window.frames.length > 0) {
-                    pageinfo = $(window.frames[0].document).find("#pageinfo");
-                    l = window.frames[0].document.location;
-
-
-                }
-                $(".m-deviceSwitch").show();
-                if (pageinfo.length == 0) {
-                    $(".m-deviceSwitch").hide();
-                    return;
-                }
-                $("#secUrl").attr("data-host", l.host).attr("data-pathname", l.pathname).attr("data-search", l.search).attr("data-hash", l.hash);
-                var pagedevice = pageinfo.attr("data-device");
-                $(".m-deviceSwitch").find("li[data-device=" + pagedevice + "]").addClass("active").find("a").addClass("z-current");
-                $(".m-deviceSwitch").find("li").not(".active").click(function () {
-                    var secUrl = $("#secUrl");
-                    var pathname = secUrl.attr("data-pathname");
-                    var search = secUrl.attr("data-search");
-                    var hash = secUrl.attr("data-hash");
-                    var npagedevice = $(this).attr("data-device");
-                    var flag = "yibu_IsMobileDevice=true";
-                    var mobileUrl = "";
-                    if (npagedevice == "Pc") {
-                        mobileUrl = mobileUrl + pathname + search.replace("deviceModel=mobile", "deviceModel=pc") + hash;
-                        mobileUrl = mobileUrl.replace("&" + flag, "").replace("?" + flag, "");
-                    } else if (npagedevice == "Mobile") {
-                        var toUrl = pathname + search.replace("deviceModel=pc", "deviceModel=mobile") + hash;
-                        toUrl = toUrl.replace("&" + flag, "").replace("?" + flag, "");
-                        //if (toUrl.indexOf("?") === -1) {
-                        //    toUrl += "?" + flag;
-                        //}
-                        //else {
-                        //    toUrl += "&" + flag;
-                        //}
-
-                        mobileUrl = mobileUrl + "/Runtime/MobileContainer?url=" + encodeURIComponent(toUrl) + "&" + flag;
-                    }
-                    $.ajax({
-                        cache: false,
-                        url: "/Common/ChangeRunTimeDeviceMode",
-                        type: "post",
-                        data: { type: "Pc" },
-                        dataType: "json",
-                        success: function (result) {
-                            if (result.IsSuccess) {
-                                window.top.location.href = mobileUrl;
-                            }
-                        },
-                        error: function () { }
-                    });
-                });
-            }
-            catch (e) {
-                $(".m-deviceSwitch").find("li[data-device=Mobile]").addClass("active").find("a").addClass("z-current");
-            }
-        }
-        $(function () {
-            if ($("#prevMainFrame").length > 0) {
-                $("#prevMainFrame").load(initialDeviceSwitch);
-            } else {
-                initialDeviceSwitch();
-            }
-        });
-    </script>
-    <style>
-        /*不可直接引用bootstarp,否则会对页面样式有影响*/
-        .alert {
-            padding: 15px;
-            margin-bottom: 20px;
-            border: 1px solid transparent;
-            border-radius: 4px
-        }
-
-        .alert-info {
-            color: #31708f;
-            background-color: #d9edf7;
-            border-color: #bce8f1
-        }
-
-        .alert-dismissable,
-        .alert-dismissible {
-            padding-right: 35px
-        }
-
-        .alert-dismissable .close,
-        .alert-dismissible .close {
-            position: relative;
-            top: -5px;
-            right: -21px;
-            color: inherit
-        }
-
-        button.close {
-            -webkit-appearance: none;
-            padding: 0;
-            cursor: pointer;
-            background: 0 0;
-            border: 0
-        }
-
-        .close {
-            float: right;
-            font-size: 21px;
-            font-weight: 700;
-            line-height: 1;
-            color: #000;
-            text-shadow: 0 1px 0 #fff;
-            filter: alpha(opacity=20);
-            opacity: .2
-        }
-    </style>
-    <script src="https://ntemimg.wezhan.cn/Designer/Content/js/bootstrap.min.js?_version=20221109114319"
-        type="text/javascript"></script>
-    <div id="deadlineTips" class="alert alert-info alert-dismissible"
-        style="margin-bottom: 0px; display: none; z-index: 2147483647; position: absolute; left: 0; right:0;"
-        role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"
-            onclick="sessionStorage.setItem('_ptk_','true')"><span aria-hidden="true">&times;</span></button>
-        <span
-            style="text-align: center; display: block; ">分享给他人？请复制当前浏览器地址分享给他人，他人浏览需进行安全验证，验证方式为您的手机号，请在<b>网站后台</b>进行<b>扫码关注绑定手机号</b>用以安全验证</span>
-    </div>
-    <script>
-        var token = "";
-
-        function FixHref() {
-            $(function () {
-                $("a[href]").each(function (a, b) {
-                    if (b.href.indexOf(location.host) !== -1 && b.href.indexOf("_ptk=") === -1) {
-                        //此处不能直接用b.href,否则会带上域名,导致导航条选中态异常
-                        var aHref = $(b).attr("href");
-                        var index = aHref.indexOf('#');
-                        if (index !== -1) {
-                            if (index === 0) {
-                                return;
-                            }
-                            else {
-                                var href = aHref.substr(0, index);
-                                aHref = href + (href.indexOf('?') === -1 ? "?" : "&") + "_ptk=" + token + aHref.substr(index);
-                            }
-                        }
-                        else {
-                            aHref = aHref + (aHref.indexOf('?') === -1 ? "?" : "&") + "_ptk=" + token;
-                        }
-                        $(b).attr("href", aHref);
-                    }
-                });
-                $("[data-url]").each(function (a, b) {
-                    var dataUrl = $(b).attr("data-url") || "";
-                    if (dataUrl.indexOf("http") !== 0 && dataUrl.indexOf("_ptk=") === -1) {
-                        var aHref = dataUrl;
-                        var index = aHref.indexOf('#');
-                        if (index !== -1) {
-                            if (index === 0) {
-                                return;
-                            }
-                            else {
-                                var href = aHref.substr(0, index);
-                                aHref = href + (href.indexOf('?') === -1 ? "?" : "&") + "_ptk=" + token + aHref.substr(index);
-                            }
-                        }
-                        else {
-                            aHref = aHref + (aHref.indexOf('?') === -1 ? "?" : "&") + "_ptk=" + token;
-                        }
-                        $(b).attr("data-url", aHref);
-                    }
-                });
-            });
-        }
-
-        function InIframe() {
-            try {
-                return window.self !== window.top;
-            } catch (e) {
-                return true;
-            }
-        }
-
-        function ShowTips() {
-            var val = sessionStorage.getItem("_ptk_");
-            if (!val && !InIframe()) {
-                $("#deadlineTips").show();
-            }
-        }
-        if (token) {
-            FixHref();
-            ShowTips();
-        }
-    </script> -->
-
-
     <div id="mainContentWrapper" style="background-color: transparent; background-image: none; background-repeat: no-repeat;background-position:0 0; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);;
      position: relative; width: 100%;min-width:1000px;background-size: auto;" bgScroll="none">
         <div style="background-color: rgb(0, 0, 0); background-image: none; background-repeat: no-repeat;background-position:0 0; background:-moz-linear-gradient(top, none, none);background:-webkit-gradient(linear, left top, left bottom, from(none), to(none));background:-o-linear-gradient(top, none, none);background:-ms-linear-gradient(top, none, none);background:linear-gradient(top, none, none);;
@@ -354,9 +100,9 @@
                                             </li>
                                             <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
                                                 <div class="w-nav-item">
-                                                    <a href="/" target="_self" class="w-nav-item-link">
+                                                    <a href="/en/" target="_self" class="w-nav-item-link">
                                                         <span class="mw-iconfont"></span>
-                                                        <span class="w-link-txt">首页</span>
+                                                        <span class="w-link-txt">Home</span>
                                                     </a>
                                                     <div class="sliding" style="width:20%;"></div>
                                                 </div>
@@ -364,9 +110,9 @@
                                             </li>
                                             <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
                                                 <div class="w-nav-item">
-                                                    <a href="/gywm" target="_self" class="w-nav-item-link">
+                                                    <a href="/en/gywm/" target="_self" class="w-nav-item-link">
                                                         <span class="mw-iconfont"></span>
-                                                        <span class="w-link-txt">关于我们</span>
+                                                        <span class="w-link-txt">About us</span>
                                                     </a>
                                                     <div class="sliding" style="width:20%;"></div>
                                                 </div>
@@ -374,30 +120,31 @@
                                             </li>
                                             <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
                                                 <div class="w-nav-item">
-                                                    <a href="/cpzx" target="_self" class="w-nav-item-link">
+                                                    <a href="/en/cpzx/" target="_self" class="w-nav-item-link">
                                                         <span class="mw-iconfont"></span>
-                                                        <span class="w-link-txt">产品中心</span>
+                                                        <span class="w-link-txt">Product</span>
                                                     </a>
                                                     <div class="sliding" style="width:20%;"></div>
                                                 </div>
 
                                             </li>
 
-                                            <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
-                                                <div class="w-nav-item">
-                                                    <a href="/lxwm" target="_self" class="w-nav-item-link">
-                                                        <span class="mw-iconfont"></span>
-                                                        <span class="w-link-txt">联系我们</span>
-                                                    </a>
-                                                    <div class="sliding" style="width:20%;"></div>
-                                                </div>
-
-                                            </li>
                                             <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
                                                 <div class="w-nav-item">
                                                     <a href="/en/lxwm/" target="_self" class="w-nav-item-link">
                                                         <span class="mw-iconfont"></span>
-                                                        <span class="w-link-txt">English</span>
+                                                        <span class="w-link-txt">Contact us</span>
+                                                    </a>
+                                                    <div class="sliding" style="width:20%;"></div>
+                                                </div>
+
+                                            </li>
+
+                                            <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
+                                                <div class="w-nav-item">
+                                                    <a href="/lxwm/" target="_self" class="w-nav-item-link">
+                                                        <span class="mw-iconfont"></span>
+                                                        <span class="w-link-txt">中文</span>
                                                     </a>
                                                     <div class="sliding" style="width:20%;"></div>
                                                 </div>
@@ -517,12 +264,13 @@
                                     <div id='txt_con_6_32' style="height: 100%;">
                                         <div class="editableContent" id="txtc_con_6_32"
                                             style="height: 100%; word-wrap:break-word;">
-                                            <p style="text-align:center"><span style="font-size:x-large">联系我们</span></p>
+                                            <p style="text-align:center"><span style="font-size:x-large">Contact
+                                                    us</span></p>
 
-                                            <p style="text-align:center">&nbsp;</p>
+                                            <!-- <p style="text-align:center">&nbsp;</p>
 
                                             <p style="text-align:center"><span style="font-size:14px">Contact us</span>
-                                            </p>
+                                            </p> -->
 
                                         </div>
                                     </div>
@@ -1003,10 +751,12 @@
                                                     <span class="company-info-icon ">
                                                         <i class="ltd-icon  gs-dizhi"></i>
                                                     </span>
-                                                    <span class="company-info-title " style="white-space:pre">地址：</span>
+                                                    <span class="company-info-title "
+                                                        style="white-space:pre">Address：</span>
                                                 </div>
                                                 <div class="company-text">
-                                                    <span class="company-info-text">江苏省苏州市吴江区平望镇平安村松桃线88号</span>
+                                                    <span class="company-info-text">88 Songtao Rd. Ping'an Cun Pingwang
+                                                        Town,Wujiang District Suzhou,China</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -1016,7 +766,7 @@
                                                     <span class="company-info-icon ">
                                                         <i class="ltd-icon  gs-dianhua"></i>
                                                     </span>
-                                                    <span class="company-info-title " style="white-space:pre">电话：</span>
+                                                    <span class="company-info-title " style="white-space:pre">Tel：</span>
                                                 </div>
                                                 <div class="company-text">
                                                     <span class="company-info-text">0512-63670388</span>
@@ -1029,7 +779,7 @@
                                                     <span class="company-info-icon ">
                                                         <i class="ltd-icon  gs-chuanzhen"></i>
                                                     </span>
-                                                    <span class="company-info-title " style="white-space:pre">手机：</span>
+                                                    <span class="company-info-title " style="white-space:pre">Mobile：</span>
                                                 </div>
                                                 <div class="company-text">
                                                     <span class="company-info-text">+86-15722706450</span>
@@ -1042,7 +792,7 @@
                                                     <span class="company-info-icon ">
                                                         <i class="ltd-icon  gs-youxiang"></i>
                                                     </span>
-                                                    <span class="company-info-title " style="white-space:pre">邮箱：</span>
+                                                    <span class="company-info-title " style="white-space:pre">E-mail：</span>
                                                 </div>
                                                 <div class="company-text">
                                                     <span
@@ -1094,8 +844,9 @@
                                                 <span class="icon company-info-icon    mw-icon-hide ">
                                                     <i class="ltd-icon gs-gongsi"></i>
                                                 </span>
-                                                <span class="company-info-title" style="white-space:pre">版权所有：</span>
-                                                <span class="company-info-text">碧龙旅游用品有限公司</span>
+                                                <span class="company-info-title"
+                                                    style="white-space:pre">Copyright：</span>
+                                                <span class="company-info-text">Bi Long Travel Products Co.,Ltd</span>
                                             </a>
                                         </span>
                                     </div>
