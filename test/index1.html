@@ -68,42 +68,7 @@
         });
     </script>
 
-    <script type="text/javascript">
-        var language = localStorage.getItem('language');
-        if (language == undefined) {
-            language = 'zh-Hans';
-            localStorage['language'] = language;
-        }
 
-        if (language == "zh-Hans") {
-            var data = {
-                "title": "碧龙旅游用品有限公司",
-                "navigation": [
-                    "首页",
-                    "关于我们",
-                    "产品中心",
-                    "联系我们",
-                    "English"
-                ]
-            };
-            document.title = data.title;
-        } else {
-            var data = {
-                "title": "Bi Long Travel Products Co.,Ltd",
-                "navigation": [
-                    "首页",
-                    "关于我们",
-                    "产品中心",
-                    "联系我们",
-                    "English"
-                ]
-            };
-            document.title = data.title;
-        }
-
-
-        $('w-nav .w-nav-inner')
-    </script>
 </head>
 
 <body id="smart-body" area="main">
@@ -436,18 +401,6 @@
                                                     </a>
                                                     <div class="sliding" style="width:20%;"></div>
                                                 </div>
-                                                <script>
-                                                    var changeLanguage = function () {
-                                                        var language = localStorage['language'];
-                                                        if (language == "en") {
-                                                            language = "zh-Hans";
-                                                        } else {
-                                                            language = "en";
-                                                        }
-                                                        localStorage['language'] = language;
-                                                        location.reload();
-                                                    }
-                                                </script>
 
                                             </li>
                                         </ul>
@@ -1229,7 +1182,7 @@
                                                 class="esmartMargin smartAbs " cpid="5405" cstyle="Style1"
                                                 ccolor="Item0" areaId="Area0" isContainer="False" pvid="con_38_12"
                                                 tareaId="" re-direction="all" daxis="All" isdeletable="True"
-                                                style="height: 177px; width: 558px; left: 0px; top: 0px;z-index:11;">
+                                                style="height: 187px; width: 558px; left: 0px; top: 0px;z-index:11;">
                                                 <div class="yibuFrameContent con_24_47  companyIntroduction_Style1  "
                                                     style="overflow:hidden;;"><!--article info-->
                                                     <div class="w-info">
@@ -1441,6 +1394,8 @@
         }
     </script>
 
+
+
     <div id="systemDialogLayer" style="position:relative;z-index:999999"></div>
 
 
@@ -1457,6 +1412,226 @@
         src="https://ntemimg.wezhan.cn/Designer/Scripts/Responsive/CtrlAdjuster/ResponsiveJsLoader.js?_version=20230109185903&nonce=3d7292"
         DynamicLoadPath="https://ntemimg.wezhan.cn/Designer/Scripts/Responsive/CtrlAdjuster/Core-Babeled.js?_version=20230109185903"></script>
 
+    <script type="text/javascript">
+        var changeLanguage = function () {
+            var language = localStorage['language'];
+            if (language == "en") {
+                language = "zh-Hans";
+            } else {
+                language = "en";
+            }
+            localStorage['language'] = language;
+            location.reload();
+        };
+
+        var language = localStorage.getItem('language');
+        if (language == undefined) {
+            language = 'zh-Hans';
+            localStorage['language'] = language;
+        }
+
+        var languageData = {
+            "zh-Hans": {
+                "title": "碧龙旅游用品有限公司",
+                "navigation": [
+                    {
+                        "name": "首页",
+                        "href": "/"
+                    },
+                    {
+                        "name": "关于我们",
+                        "href": "/gywm/"
+                    },
+                    {
+                        "name": "产品中心",
+                        "href": "/cpzx/"
+                    },
+                    {
+                        "name": "联系我们",
+                        "href": "/lxwm/"
+                    },
+                    {
+                        "name": "English",
+                        "href": "javascript:changeLanguage();"
+                    },
+                ],
+                "product": {
+                    'name': "产品分类",
+                    "width": '162px',
+                    'left': '406px',
+                    'category': [{
+                        'name': '船罩',
+                        'href': '/cpzx/boat/',
+                        'img': '/images/boat.jpg'
+                    }, {
+                        'name': '房车罩',
+                        'href': '/cpzx/rv/',
+                        'img': '/images/rv.jpg'
+                    }, {
+                        'name': '家具罩',
+                        'href': '/cpzx/patio/',
+                        'img': '/images/patio.jpg'
+                    }, {
+                        'name': '汽车罩',
+                        'href': '/cpzx/car/',
+                        'img': '/images/car.jpg'
+                    }, {
+                        'name': '箱包',
+                        'href': '/cpzx/bag/',
+                        'img': '/images/bag.jpg'
+                    }, {
+                        'name': '帐篷',
+                        'href': '/cpzx/tent/',
+                        'img': '/images/tent.jpg'
+                    }]
+                },
+                "about": {
+                    "name": "关于我们",
+                    "height": "177px",
+                    "more": "查看更多",
+                    "content": "苏州市碧龙旅游用品有限公司是一家专业生产各类车罩、船罩、帐篷、箱包的私营企业，公司成立于2011年3月，具有自营出口资格。地处中国最发达地区-长三角经济圈的腹地。环境优美，交通便利。我公司秉承“品质第一，互利共赢〞的经营理念，坚持“立足国内，面向世界”的经营政策。公司从各地高薪聘请了多位具有十多年经验的专业技术和管理人才。年产量达到400000件。"
+                },
+                "footer": {
+                    "title": "版权所有：",
+                    "text": "碧龙旅游用品有限公司"
+                },
+            },
+            "en": {
+                "title": "Bi Long Travel Products Co.,Ltd",
+                "navigation": [
+                    {
+                        "name": "Home",
+                        "href": "/"
+                    },
+                    {
+                        "name": "About us",
+                        "href": "/gywm/"
+                    },
+                    {
+                        "name": "Product",
+                        "href": "/cpzx/"
+                    },
+                    {
+                        "name": "Contact us",
+                        "href": "/lxwm/"
+                    },
+                    {
+                        "name": "中文",
+                        "href": "javascript:changeLanguage();"
+                    },
+                ],
+                "product": {
+                    'name': "Product Classification",
+                    "width": '362px',
+                    'left': '306px',
+                    'category': [{
+                        'name': 'Boat Cover',
+                        'href': '/cpzx/boat/',
+                        'img': '/images/boat.jpg'
+                    }, {
+                        'name': 'RV Cover',
+                        'href': '/cpzx/rv/',
+                        'img': '/images/rv.jpg'
+                    }, {
+                        'name': 'Patio Cover',
+                        'href': '/cpzx/patio/',
+                        'img': '/images/patio.jpg'
+                    }, {
+                        'name': 'Car Cover',
+                        'href': '/cpzx/car/',
+                        'img': '/images/car.jpg'
+                    }, {
+                        'name': 'Bag',
+                        'href': '/cpzx/bag/',
+                        'img': '/images/bag.jpg'
+                    }, {
+                        'name': 'Tent',
+                        'href': '/cpzx/tent/',
+                        'img': '/images/tent.jpg'
+                    }]
+                },
+                "about": {
+                    "name": "About us",
+                    "height": "187px",
+                    "more": "more",
+                    "content": "Suzhou BiLong Travel Products Co., LTD is a private enterprise with professional production of various kinds of car covers, boat covers, tents, bags and suitcases. The company was established in March 2011, with export qualifications. It is located in the most developed region in China- the Yangtze river delta economic circle hinterland with a beautiful environment and convenient transportation."
+                },
+                "footer": {
+                    "title": "Copyright：",
+                    "text": "Bi Long Travel Products Co.,Ltd"
+                },
+            }
+        };
+
+        var data = languageData[language];
+
+        // 标题
+        document.title = data.title;
+
+        // 导航
+        console.log($("#nav_tem_2_35 .w-nav"));
+        var navigation = $("#nav_tem_2_35");
+        //var ns = navigation.find(".w-nav")[0];
+        // for (let i = 0; i < data.navigation.length; i++) {
+        //     ns.append(
+        //         '<li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">'
+        //         + '<div class="w-nav-item">'
+        //         + '    <a href="' + data.navigation[i].href + '" target="_self" class="w-nav-item-link">'
+        //         + '<span class="mw-iconfont"></span>'
+        //         + ' <span class="w-link-txt">' + data.navigation[i].name + '</span>'
+        //         + '</a>'
+        //         + '<div class="sliding" style="width:20%;"></div>'
+        //         + '</div>'
+        //         + '</li>');
+        // }
+
+        var navigationHref = navigation.find(".w-nav-item-link");
+        for (let i = 0; i < navigationHref.length; i++) {
+            navigationHref[i].href = data.navigation[i].href;
+        }
+        var navigationName = navigation.find(".w-link-txt");
+        for (let i = 0; i < navigationName.length; i++) {
+            navigationName[i].innerText = data.navigation[i].name;
+        }
+
+        // 版权
+        var ft = $("#smv_tem_66_55");
+        ft.find(".company-info-title")[0].innerText = data.footer.title;
+        ft.find(".company-info-text")[0].innerText = data.footer.text;
+
+        // 产品
+        var product = data.product;
+        $("#txt_con_29_45").find("span")[1].innerText = product.name;
+        document.getElementById("smv_con_29_45").style.width = product.width;
+        document.getElementById("smv_con_28_45").style.left = product.left;
+
+        var sv = $("#smv_con_5_58");
+        var hrefs = sv.find(".w-list-link");
+        for (let i = 0; i < hrefs.length; i++) {
+            hrefs[i].href = product.category[i].href;
+        }
+
+        var imgs = sv.find(".w-listpic-in");
+        for (let i = 0; i < imgs.length; i++) {
+            imgs[i].src = product.category[i].img;
+        }
+
+        var titleItem = sv.find(".w-list-title");
+        for (let i = 0; i < titleItem.length; i++) {
+            titleItem[i].innerText = product.category[i].name;
+        }
+
+        // 关于我们
+        var about = data.about;
+        $("#txt_con_7_59").find("span")[1].innerText = about.name;
+        $("#smv_con_24_47").find(".w-info")[0].innerHTML = about.content;
+        // document.getElementById("smv_con_24_47").getElementsByClassName("w-info")[0].innerHTML = about.content;
+        // document.getElementById("smv_con_24_47").style.height = about.height;
+        // document.getElementById("smv_con_38_12").getElementsByClassName("w-button-text")[0].innerText = about.more;
+        $("#smv_con_38_12").find(".w-button-text")[0].innerText = about.more;
+
+
+    </script>
 </body>
 
 </html>

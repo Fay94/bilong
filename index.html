@@ -67,28 +67,6 @@
             }
         });
     </script>
-
-    <script type="text/javascript">
-        var language = localStorage.getItem(language);
-        if (language == undefined) {
-            language = 'zh-Hans';
-            localStorage['language'] = language;
-        }
-
-
-        var zhanHans = {
-            "title": "碧龙旅游用品有限公司",
-            "navigation": [
-                "首页",
-                "关于我们",
-                "产品中心",
-                "联系我们",
-                "English"
-            ]
-        };
-
-        document.title = zhanHans.title;
-    </script>
 </head>
 
 <body id="smart-body" area="main">
@@ -372,7 +350,7 @@
                                             <li class="sliding-box" style="left:-0px;top:-0px">
                                                 <div class="sliding" style="width:20%;"></div>
                                             </li>
-                                            <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
+                                            <!-- <li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">
                                                 <div class="w-nav-item">
                                                     <a href="/" target="_self" class="w-nav-item-link">
                                                         <span class="mw-iconfont"></span>
@@ -421,7 +399,7 @@
                                                     <div class="sliding" style="width:20%;"></div>
                                                 </div>
 
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </div>
                                     <script>
@@ -1011,7 +989,7 @@
                                     <div class="w-list xn-resize">
                                         <ul class="w-list-ul" id="ulList_con_5_58" data-title-autolines="1"
                                             data-desc-autolines="1">
-                                            <li class="w-list-item f-clearfix">
+                                            <!-- <li class="w-list-item f-clearfix">
                                                 <a href="/cpzx/boat/" target="_self" class="w-list-link">
                                                     <div class="w-list-pic">
                                                         <img src="/images/boat.jpg" class="w-listpic-in" />
@@ -1070,7 +1048,7 @@
                                                         <h5 class="w-list-title">帐篷</h5>
                                                     </div>
                                                 </a>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </div>
                                     <script>
@@ -1201,7 +1179,7 @@
                                                 class="esmartMargin smartAbs " cpid="5405" cstyle="Style1"
                                                 ccolor="Item0" areaId="Area0" isContainer="False" pvid="con_38_12"
                                                 tareaId="" re-direction="all" daxis="All" isdeletable="True"
-                                                style="height: 177px; width: 558px; left: 0px; top: 0px;z-index:11;">
+                                                style="height: 187px; width: 558px; left: 0px; top: 0px;z-index:11;">
                                                 <div class="yibuFrameContent con_24_47  companyIntroduction_Style1  "
                                                     style="overflow:hidden;;"><!--article info-->
                                                     <div class="w-info">
@@ -1429,6 +1407,11 @@
         src="https://ntemimg.wezhan.cn/Designer/Scripts/Responsive/CtrlAdjuster/ResponsiveJsLoader.js?_version=20230109185903&nonce=3d7292"
         DynamicLoadPath="https://ntemimg.wezhan.cn/Designer/Scripts/Responsive/CtrlAdjuster/Core-Babeled.js?_version=20230109185903"></script>
 
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script type="text/javascript">
+        init("index");
+    </script>
+    
 </body>
 
 </html>
