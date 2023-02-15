@@ -1,4 +1,3 @@
-
 // 切换语言
 function changeLanguage() {
     var language = localStorage['language'];
@@ -57,7 +56,7 @@ function init(pageName) {
                 "title": "版权所有：",
                 "text": "碧龙旅游用品有限公司"
             },
-            "product": {
+            "cpzx": {
                 "title": "产品分类",
                 "width": "162px",
                 "left": "406px",
@@ -65,17 +64,18 @@ function init(pageName) {
                     {
                         "name": "boat",
                         "title": "船罩",
+                        "img": "//s1.ax1x.com/2023/02/15/pS7Q3V0.jpg",
                         "products": [
                             {
-                                "img": "T顶船罩----T-TOP boat cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7luFK.jpg",
                                 "title": "T顶船罩"
                             },
                             {
-                                "img": "皮艇罩----Kayak Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7lELR.jpg",
                                 "title": "皮艇罩"
                             },
                             {
-                                "img": "船罩----Boat Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7lZe1.jpg",
                                 "title": "船罩"
                             }
                         ]
@@ -83,17 +83,18 @@ function init(pageName) {
                     {
                         "name": "rv",
                         "title": "房车罩",
+                        "img": "//s1.ax1x.com/2023/02/15/pS7Qlbq.jpg",
                         "products": [
                             {
-                                "img": "A型房车罩----Class A RV Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7aNuT.jpg",
                                 "title": "A型房车罩"
                             },
                             {
-                                "img": "B型房车罩----Class B RV Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7aYvV.jpg",
                                 "title": "B型房车罩"
                             },
                             {
-                                "img": "C型房车罩----Class C RV Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7aG3q.jpg",
                                 "title": "C型房车罩"
                             }
                         ]
@@ -101,25 +102,26 @@ function init(pageName) {
                     {
                         "name": "patio",
                         "title": "家具罩",
+                        "img": "//s1.ax1x.com/2023/02/15/pS7QQrn.jpg",
                         "products": [
                             {
-                                "img": "收纳包----Patio Cushion and Cover Storage Bag.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7U7BF.jpg",
                                 "title": "收纳包"
                             },
                             {
-                                "img": "烤架罩----Kamado Ceramic Grill Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7U5cV.jpg",
                                 "title": "烤架罩"
                             },
                             {
-                                "img": "烤炉罩----Grill Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7UIXT.jpg",
                                 "title": "烤炉罩"
                             },
                             {
-                                "img": "躺椅罩----Lounge Chair Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7l56J.jpg",
                                 "title": "躺椅罩"
                             },
                             {
-                                "img": "靠椅罩----High Back Patio Chair Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7UTnU.jpg",
                                 "title": "靠椅罩"
                             }
                         ]
@@ -127,13 +129,14 @@ function init(pageName) {
                     {
                         "name": "car",
                         "title": "汽车罩",
+                        "img": "//s1.ax1x.com/2023/02/15/pS7QMKs.jpg",
                         "products": [
                             {
-                                "img": "汽车罩----Car Cover.jpg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7lMWD.jpg",
                                 "title": "汽车罩"
                             },
                             {
-                                "img": "车罩----Car Cover.jpg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7lmo6.jpg",
                                 "title": "车罩"
                             }
                         ]
@@ -141,13 +144,14 @@ function init(pageName) {
                     {
                         "name": "bag",
                         "title": "箱包",
+                        "img": "//s1.ax1x.com/2023/02/15/pS7Q8aV.jpg",
                         "products": [
                             {
-                                "img": "登山包----Hiking bags.jpg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7ledx.jpg",
                                 "title": "登山包"
                             },
                             {
-                                "img": "工具包--- Tool Bags.png",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7lKJO.png",
                                 "title": "工具包"
                             }
                         ]
@@ -155,13 +159,14 @@ function init(pageName) {
                     {
                         "name": "tent",
                         "title": "帐篷",
+                        "img": "//s1.ax1x.com/2023/02/15/pS7QYPU.jpg",
                         "products": [
                             {
-                                "img": "二人帐篷---Dome Tent（2 Person）.jpg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7aJg0.jpg",
                                 "title": "二人帐篷"
                             },
                             {
-                                "img": "天幕----Shade Shelter.jpg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7a8Cn.jpg",
                                 "title": "天幕"
                             }
                         ]
@@ -235,7 +240,7 @@ function init(pageName) {
                 "title": "Copyright：",
                 "text": "Bi Long Travel Products Co.,Ltd"
             },
-            "product": {
+            "cpzx": {
                 "title": "Product Classification",
                 "width": "362px",
                 "left": "306px",
@@ -243,17 +248,18 @@ function init(pageName) {
                     {
                         "name": "boat",
                         "title": "Boat Cover",
+                        "img": "//s1.ax1x.com/2023/02/15/pS7Q3V0.jpg",
                         "products": [
                             {
-                                "img": "T顶船罩----T-TOP boat cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7luFK.jpg",
                                 "title": "T-TOP boat cover"
                             },
                             {
-                                "img": "皮艇罩----Kayak Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7lELR.jpg",
                                 "title": "Kayak Cover"
                             },
                             {
-                                "img": "船罩----Boat Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7lZe1.jpg",
                                 "title": "Boat Cover"
                             }
                         ]
@@ -261,17 +267,18 @@ function init(pageName) {
                     {
                         "name": "rv",
                         "title": "RV Cover",
+                        "img": "//s1.ax1x.com/2023/02/15/pS7Qlbq.jpg",
                         "products": [
                             {
-                                "img": "A型房车罩----Class A RV Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7aNuT.jpg",
                                 "title": "Class A RV Cover"
                             },
                             {
-                                "img": "B型房车罩----Class B RV Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7aYvV.jpg",
                                 "title": "Class B RV Cover"
                             },
                             {
-                                "img": "C型房车罩----Class C RV Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7aG3q.jpg",
                                 "title": "Class C RV Cover"
                             }
                         ]
@@ -279,25 +286,26 @@ function init(pageName) {
                     {
                         "name": "patio",
                         "title": "Patio Cover",
+                        "img": "//s1.ax1x.com/2023/02/15/pS7QQrn.jpg",
                         "products": [
                             {
-                                "img": "收纳包----Patio Cushion and Cover Storage Bag.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7U7BF.jpg",
                                 "title": "Patio Cushion and Cover Storage Bag"
                             },
                             {
-                                "img": "烤架罩----Kamado Ceramic Grill Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7U5cV.jpg",
                                 "title": "Kamado Ceramic Grill Cover"
                             },
                             {
-                                "img": "烤炉罩----Grill Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7UIXT.jpg",
                                 "title": "Grill Cover"
                             },
                             {
-                                "img": "躺椅罩----Lounge Chair Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7l56J.jpg",
                                 "title": "Lounge Chair Cover"
                             },
                             {
-                                "img": "靠椅罩----High Back Patio Chair Cover.jpeg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7UTnU.jpg",
                                 "title": "High Back Patio Chair Cover"
                             }
                         ]
@@ -305,13 +313,14 @@ function init(pageName) {
                     {
                         "name": "car",
                         "title": "Car Cover",
+                        "img": "//s1.ax1x.com/2023/02/15/pS7QMKs.jpg",
                         "products": [
                             {
-                                "img": "汽车罩----Car Cover.jpg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7lMWD.jpg",
                                 "title": "Car Cover"
                             },
                             {
-                                "img": "车罩----Car Cover.jpg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7lmo6.jpg",
                                 "title": "Car Cover"
                             }
                         ]
@@ -319,13 +328,14 @@ function init(pageName) {
                     {
                         "name": "bag",
                         "title": "Bag",
+                        "img": "//s1.ax1x.com/2023/02/15/pS7Q8aV.jpg",
                         "products": [
                             {
-                                "img": "登山包----Hiking bags.jpg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7ledx.jpg",
                                 "title": "Hiking bags"
                             },
                             {
-                                "img": "工具包--- Tool Bags.png",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7lKJO.png",
                                 "title": "Tool Bags"
                             }
                         ]
@@ -333,13 +343,14 @@ function init(pageName) {
                     {
                         "name": "tent",
                         "title": "Tent",
+                        "img": "//s1.ax1x.com/2023/02/15/pS7QYPU.jpg",
                         "products": [
                             {
-                                "img": "二人帐篷---Dome Tent（2 Person）.jpg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7aJg0.jpg",
                                 "title": "Dome Tent（2 Person）"
                             },
                             {
-                                "img": "天幕----Shade Shelter.jpg",
+                                "img": "//s1.ax1x.com/2023/02/15/pS7a8Cn.jpg",
                                 "title": "Shade Shelter"
                             }
                         ]
@@ -429,34 +440,27 @@ function init(pageName) {
             + '</div>'
             + '</li>');
     }
-    // var navigationHref = navigation.find(".w-nav-item-link");
-    // for (let i = 0; i < navigationHref.length; i++) {
-    //     navigationHref[i].href = data.navigation[i].href;
-    // }
-    // var navigationName = navigation.find(".w-link-txt");
-    // for (let i = 0; i < navigationName.length; i++) {
-    //     navigationName[i].innerText = data.navigation[i].title;
-    // }
 
     // 版权
     $("#smv_tem_66_55 .company-info-title")[0].innerText = data.footer.title;
     $("#smv_tem_66_55 .company-info-text")[0].innerText = data.footer.text;
 
     if (pageName == "index") {
-        // 产品分类
-        $("#txt_con_29_45").find("span")[1].innerText = data.product.title;
-        document.getElementById("smv_con_29_45").style.width = data.product.width;
-        document.getElementById("smv_con_28_45").style.left = data.product.left;
 
-        for (let i = 0; i < data.product.category.length; i++) {
+        // 产品分类
+        $("#txt_con_29_45").find("span")[1].innerText = data.cpzx.title;
+        document.getElementById("smv_con_29_45").style.width = data.cpzx.width;
+        document.getElementById("smv_con_28_45").style.left = data.cpzx.left;
+
+        for (let i = 0; i < data.cpzx.category.length; i++) {
             $("#ulList_con_5_58").append(
                 '<li class="w-list-item f-clearfix">'
-                + '<a href="/cpzx/?category=' + data.product.category[i].name + '" target="_self" class="w-list-link">'
+                + '<a href="/cpzx/?category=' + data.cpzx.category[i].name + '" target="_self" class="w-list-link">'
                 + '<div class="w-list-pic">'
-                + '<img src="/images/' + data.product.category[i].name + '.jpg" class="w-listpic-in" />'
+                + '<img src="' + data.cpzx.category[i].img + '" class="w-listpic-in" />'
                 + '</div>'
                 + '<div class="w-list-bottom">'
-                + '<h5 class="w-list-title">' + data.product.category[i].title + '</h5>'
+                + '<h5 class="w-list-title">' + data.cpzx.category[i].title + '</h5>'
                 + '</div>'
                 + '</a>'
                 + '</li>');
@@ -467,22 +471,26 @@ function init(pageName) {
         $("#txt_con_7_59").find("span")[1].innerText = about.title;
         $("#smv_con_24_47").find(".w-info")[0].innerHTML = about.info;
         $("#smv_con_38_12").find(".w-button-text")[0].innerText = about.more;
+
     } else if (pageName == "gywm") {
+
         $("#smv_con_16_23 .w-info")[0].innerText = data.about.text;
+
     } else if (pageName == "cpzx") {
+
         var params = getQuery(document.URL);
         var category = params.category;
 
         var products = [];
 
-        for (let i = 0; i < data.product.category.length; i++) {
+        for (let i = 0; i < data.cpzx.category.length; i++) {
             if (category != undefined) {
-                if (category == data.product.category[i].name) {
-                    products.push(data.product.category[i]);
+                if (category == data.cpzx.category[i].name) {
+                    products.push(data.cpzx.category[i]);
                     break;
                 }
             } else {
-                products.push(data.product.category[i]);
+                products.push(data.cpzx.category[i]);
             }
 
         }
@@ -492,9 +500,9 @@ function init(pageName) {
                 num++;
                 $("#smv_con_3_30 ul").append(
                     '<li class="w-list-item f-clearfix">'
-                    + '<a href="javascript:void(0);"target="_self" class="w-list-link">'
+                    + '<a href="javascript:void(0);" target="_self" class="w-list-link">'
                     + '<div class="w-list-pic">'
-                    + '<img src="/images/' + products[i].name + "/" + products[i].products[l].img + '"'
+                    + '<img src="' + products[i].products[l].img + '"'
                     + 'class="w-listpic-in" />'
                     + '</div>'
                     + '<div class="w-list-bottom">'
@@ -513,6 +521,7 @@ function init(pageName) {
         $("#smv_Main")[0].style.height = (1046 + add) + "px"
 
     } else if (pageName == "lxwm") {
+
         for (let i = 0; i < data.contact.length; i++) {
             $("#smv_con_24_26 ul").append(
                 '<li class="company-info-item">'
