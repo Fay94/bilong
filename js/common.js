@@ -518,12 +518,11 @@ function init(pageName) {
                     + '</li>');
             }
         }
-        var rows = Math.ceil(num / 4)
-        console.log(rows)
-        console.log($("#smv_con_3_30")[0].style.width)
-        var add = (rows - 1) * 365
-        $("#smv_con_3_30")[0].style.height = (476 + add) + "px"
-        $("#smv_Main")[0].style.height = (1046 + add) + "px"
+        var rows = Math.ceil(num / 3);
+        console.log($("#smv_con_3_30")[0].style.width);
+        var add = (rows - 1) * 365;
+        $("#smv_con_3_30")[0].style.height = (476 + add) + "px";
+        $("#smv_Main")[0].style.height = (1046 + add) + "px";
 
     } else if (pageName == "lxwm") {
 
