@@ -609,7 +609,7 @@ table.cke_show_border>tfoot>tr>th {
     width: 300px;
     min-width: 100px;
     height: 300px;
-    object-fit: cover;
+    object-fit: contain;
     /*-radius-*/
     border-top-left-radius: 0;
     -webkit-border-top-left-radius: 0;
