@@ -29,7 +29,7 @@ const getQuery = (url) => {
 function init(pageName) {
     var languageData = {
         "zh-Hans": {
-            "title": "碧龙旅游用品有限公司",
+            "title": "苏州市碧龙旅游用品有限公司",
             "logo": "//s2.loli.net/2023/02/17/D3jCZRarOmtluLH.png",
             "navigation": [
                 {
@@ -55,7 +55,7 @@ function init(pageName) {
             ],
             "footer": {
                 "title": "版权所有：",
-                "text": "碧龙旅游用品有限公司"
+                "text": "苏州市碧龙旅游用品有限公司"
             },
             "cpzx": {
                 "title": "产品分类",
@@ -78,6 +78,10 @@ function init(pageName) {
                             {
                                 "title": "船罩",
                                 "img": "//s2.loli.net/2023/02/17/xBh8uRqkXbZTy4F.jpg"
+                            },
+                            {
+                                "title": "游艇罩",
+                                "img": "//s2.loli.net/2023/02/17/Lz95bXOm4dvNErj.jpg"
                             }
                         ]
                     },
@@ -97,6 +101,14 @@ function init(pageName) {
                             {
                                 "title": "C型房车罩",
                                 "img": "//s2.loli.net/2023/02/17/rY5RaQSep3AiGqD.jpg"
+                            },
+                            {
+                                "title": "拖车房车罩",
+                                "img": "//s2.loli.net/2023/02/17/ZEi5YJ4OPSxHu78.jpg"
+                            },
+                            {
+                                "title": "第5轮拖挂房车罩",
+                                "img": "//s2.loli.net/2023/02/17/9Q6fZy8iCRepOLq.jpg"
                             }
                         ]
                     },
@@ -189,6 +201,10 @@ function init(pageName) {
                             {
                                 "title": "天幕",
                                 "img": "//s2.loli.net/2023/02/17/JuIfTvPtm4iFLkE.jpg"
+                            },
+                            {
+                                "title": "淋浴帐篷",
+                                "img": "//s2.loli.net/2023/02/17/soOViUt3nC61yDE.jpg"
                             }
                         ]
                     }
@@ -234,7 +250,7 @@ function init(pageName) {
             ]
         },
         "en": {
-            "title": "Bi Long Travel Products Co.,Ltd",
+            "title": "Suzhou Bi Long Travel Products Co.,Ltd",
             "logo": "//s2.loli.net/2023/02/17/D3jCZRarOmtluLH.png",
             "navigation": [
                 {
@@ -260,7 +276,7 @@ function init(pageName) {
             ],
             "footer": {
                 "title": "Copyright：",
-                "text": "Bi Long Travel Products Co.,Ltd"
+                "text": "Suzhou Bi Long Travel Products Co.,Ltd"
             },
             "cpzx": {
                 "title": "Product Classification",
@@ -283,6 +299,10 @@ function init(pageName) {
                             {
                                 "title": "Boat Cover",
                                 "img": "//s2.loli.net/2023/02/17/xBh8uRqkXbZTy4F.jpg"
+                            },
+                            {
+                                "title": "Pantoon Boat Cover",
+                                "img": "//s2.loli.net/2023/02/17/Lz95bXOm4dvNErj.jpg"
                             }
                         ]
                     },
@@ -292,16 +312,24 @@ function init(pageName) {
                         "img": "//s2.loli.net/2023/02/15/jn5oqOV6wayxdph.jpg",
                         "products": [
                             {
-                                "img": "//s2.loli.net/2023/02/17/tRW4HBxzvQfIiDp.jpg",
-                                "title": "Class A RV Cover"
+                                "title": "Class A RV Cover",
+                                "img": "//s2.loli.net/2023/02/17/tRW4HBxzvQfIiDp.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/dcVKDUjO2G4prtF.jpg",
-                                "title": "Class B RV Cover"
+                                "title": "Class B RV Cover",
+                                "img": "//s2.loli.net/2023/02/17/dcVKDUjO2G4prtF.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/rY5RaQSep3AiGqD.jpg",
-                                "title": "Class C RV Cover"
+                                "title": "Class C RV Cover",
+                                "img": "//s2.loli.net/2023/02/17/rY5RaQSep3AiGqD.jpg"
+                            },
+                            {
+                                "title": "Travel Trailer Cover",
+                                "img": "//s2.loli.net/2023/02/17/ZEi5YJ4OPSxHu78.jpg"
+                            },
+                            {
+                                "title": "5th Wheel Cover",
+                                "img": "//s2.loli.net/2023/02/17/9Q6fZy8iCRepOLq.jpg"
                             }
                         ]
                     },
@@ -388,12 +416,16 @@ function init(pageName) {
                         "img": "//s2.loli.net/2023/02/15/Ccb5jSXPgKheznW.jpg",
                         "products": [
                             {
-                                "img": "//s2.loli.net/2023/02/17/A7gKGnWT1rxYNpm.jpg",
-                                "title": "Dome Tent（2 Person）"
+                                "title": "Dome Tent（2 Person）",
+                                "img": "//s2.loli.net/2023/02/17/A7gKGnWT1rxYNpm.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/JuIfTvPtm4iFLkE.jpg",
-                                "title": "Shade Shelter"
+                                "title": "Shade Shelter",
+                                "img": "//s2.loli.net/2023/02/17/JuIfTvPtm4iFLkE.jpg"
+                            },
+                            {
+                                "title": "Toile_Shower Tent",
+                                "img": "//s2.loli.net/2023/02/17/soOViUt3nC61yDE.jpg"
                             }
                         ]
                     }
@@ -470,11 +502,11 @@ function init(pageName) {
     document.title = data.title;
 
     // logo
-    $("#img_smv_tem_62_9")[0].src = data.logo;
+    // $("#img_smv_tem_62_9").attr("src", data.logo);
 
     // 导航
     for (let i = 0; i < data.navigation.length; i++) {
-        $("#nav_tem_2_35 ul").append(
+        $("#nav_tem_2_35 ul.w-nav").append(
             '<li class="w-nav-inner" style="height:50px;line-height:50px;width:20%;">'
             + '<div class="w-nav-item">'
             + '<a href="' + data.navigation[i].href + '" target="_self" class="w-nav-item-link">'
@@ -487,15 +519,15 @@ function init(pageName) {
     }
 
     // 版权
-    $("#smv_tem_66_55 .company-info-title")[0].innerText = data.footer.title;
-    $("#smv_tem_66_55 .company-info-text")[0].innerText = data.footer.text;
+    $("#smv_tem_66_55 .company-info-title").text(data.footer.title);
+    $("#smv_tem_66_55 .company-info-text").text(data.footer.text);
 
     if (pageName == "index") {
 
         // 产品分类
-        $("#txt_con_29_45").find("span")[1].innerText = data.cpzx.title;
-        document.getElementById("smv_con_29_45").style.width = data.cpzx.width;
-        document.getElementById("smv_con_28_45").style.left = data.cpzx.left;
+        $("#txt_con_29_45 span:first").text(data.cpzx.title);
+        $("#smv_con_29_45").css("width", data.cpzx.width);
+        $("#smv_con_28_45").css("left", data.cpzx.left);
 
         for (let i = 0; i < data.cpzx.category.length; i++) {
             $("#ulList_con_5_58").append(
@@ -512,14 +544,12 @@ function init(pageName) {
         }
 
         // 关于我们
-        var about = data.about;
-        $("#txt_con_7_59").find("span")[1].innerText = about.title;
-        $("#smv_con_24_47").find(".w-info")[0].innerHTML = about.info;
-        $("#smv_con_38_12").find(".w-button-text")[0].innerText = about.more;
+        $("#txt_con_7_59 span:first").text(data.about.title);
+        $("#smv_con_24_47 div.w-info").text(data.about.info);
+        $("#smv_con_38_12 em.w-button-text").text(data.about.more);
 
     } else if (pageName == "gywm") {
-
-        $("#smv_con_16_23 .w-info")[0].innerText = data.about.text;
+        $("#smv_con_16_23 div.w-info").text(data.about.text);
 
     } else if (pageName == "cpzx") {
 
@@ -538,7 +568,7 @@ function init(pageName) {
             } else {
                 products.push(data.cpzx.category[i]);
             }
-            $("#smv_con_20_51 ul").append(
+            $("#smv_con_20_51 ul.w-category-list").append(
                 '<li class="w-category-list-item ' + selected + '"'
                 + 'data-url="/cpzx/?category=' + data.cpzx.category[i].name + '">'
                 + '<h3 class="w-category-list-title">'
@@ -551,7 +581,7 @@ function init(pageName) {
         for (let i = 0; i < products.length; i++) {
             for (let l = 0; l < products[i].products.length; l++) {
                 num++;
-                $("#smv_con_3_30 ul").append(
+                $("#smv_con_3_30 ul.w-list-ul").append(
                     '<li class="w-list-item f-clearfix">'
                     + '<a href="javascript:void(0);" target="_self" class="w-list-link">'
                     + '<div class="w-list-pic">'
@@ -560,17 +590,15 @@ function init(pageName) {
                     + '</div>'
                     + '<div class="w-list-bottom">'
                     + '<h5 class="w-list-title">' + products[i].products[l].title + '</h5>'
-                    + '<div class="w-list-desc ">' + products[i].title + '</div>'
+                    // + '<div class="w-list-desc ">' + products[i].title + '</div>'
                     + '</div>'
                     + '</a>'
                     + '</li>');
             }
         }
-        var rows = Math.ceil(num / 3);
-        console.log($("#smv_con_3_30")[0].style.width);
-        var add = (rows - 1) * 380;
-        $("#smv_con_3_30")[0].style.height = (476 + add) + "px";
-        $("#smv_Main")[0].style.height = (1046 + add) + "px";
+        var add = (Math.ceil(num / 3) - 1) * 360;
+        $("#smv_con_3_30").css("height", (476 + add) + "px");
+        $("#smv_Main").css("height", (1046 + add) + "px");
 
     } else if (pageName == "lxwm") {
 
@@ -582,7 +610,7 @@ function init(pageName) {
                 + '<span class="company-info-icon ">'
                 + '<i class="ltd-icon ' + data.contact[i].class + '"></i>'
                 + '</span>'
-                + '<span class="company-info-title " style="white-space:pre">' + data.contact[i].title + '：</span>'
+                + '<span class="company-info-title" style="white-space:pre">' + data.contact[i].title + '：</span>'
                 + '</div>'
                 + '<div class="company-text">'
                 + '<span class="company-info-text">' + data.contact[i].text + '</span>'
