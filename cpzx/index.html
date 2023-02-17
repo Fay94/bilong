@@ -204,6 +204,8 @@
                         bgScroll="none">
                         <div class="smvContainer" id="smv_Main" cpid="5413"
                             style="min-height:400px;width:1000px;height:2546px;  position: relative; ">
+
+                            <!-- 标题 -->
                             <div id="smv_con_2_34" ctype="text" class="esmartMargin smartAbs " cpid="5413"
                                 cstyle="Style1" ccolor="Item2" areaId="" isContainer="False" pvid="" tareaId=""
                                 re-direction="all" daxis="All" isdeletable="True"
@@ -241,10 +243,201 @@
                                     </script>
                                 </div>
                             </div>
+
+                            <div id="smv_con_20_51" ctype="category" class="esmartMargin smartAbs " cpid="2249"
+                                cstyle="Style2" ccolor="Item0" areaId="Main" isContainer="False" pvid="" tareaId="Main"
+                                re-direction="all" daxis="All" isdeletable="True"
+                                style="height: 36px; width: 991px; left: 4px; top: 530px;z-index:6;">
+                                <div class="yibuFrameContent con_20_51  category_Style2  " style="overflow:visible;;">
+                                    <div class="smv_con_1_1">
+                                        <!--w-category-->
+                                        <div class="w-category" id="category_con_20_51">
+
+                                            <ul class="w-category-list">
+                                                <!-- <li class="w-category-list-item"
+                                                    data-url="/ProductInfoCategory?categoryId=641462&amp;PageInfoId=0"
+                                                    data-id="641462">
+                                                    <h3 class="w-category-list-title">
+                                                        <a href="javascript:void(0);">
+                                                            钢管
+                                                        </a>
+                                                    </h3>
+                                                </li>
+                                                <li class="w-category-list-item"
+                                                    data-url="/ProductInfoCategory?categoryId=641462&amp;PageInfoId=0"
+                                                    data-id="641462">
+                                                    <h3 class="w-category-list-title">
+                                                        <a href="javascript:void(0);">
+                                                            钢管
+                                                        </a>
+                                                    </h3>
+                                                </li>
+                                                <li class="w-category-list-item"
+                                                    data-url="/ProductInfoCategory?categoryId=641462&amp;PageInfoId=0"
+                                                    data-id="641462">
+                                                    <h3 class="w-category-list-title">
+                                                        <a href="javascript:void(0);">
+                                                            钢管
+                                                        </a>
+                                                    </h3>
+                                                </li>
+                                                <li class="w-category-list-item"
+                                                    data-url="/ProductInfoCategory?categoryId=641462&amp;PageInfoId=0"
+                                                    data-id="641462">
+                                                    <h3 class="w-category-list-title">
+                                                        <a href="javascript:void(0);">
+                                                            钢管
+                                                        </a>
+                                                    </h3>
+                                                </li>
+                                                <li class="w-category-list-item"
+                                                    data-url="/ProductInfoCategory?categoryId=641466&amp;PageInfoId=0"
+                                                    data-id="641466">
+                                                    <h3 class="w-category-list-title">
+                                                        <a href="javascript:void(0);">
+                                                            混凝土
+                                                        </a>
+                                                    </h3>
+                                                </li>
+                                                <li class="w-category-list-item"
+                                                    data-url="/ProductInfoCategory?categoryId=641469&amp;PageInfoId=0"
+                                                    data-id="641469">
+                                                    <h3 class="w-category-list-title">
+                                                        <a href="javascript:void(0);">
+                                                            钢筋
+                                                        </a>
+                                                    </h3>
+                                                </li> -->
+                                            </ul>
+
+
+                                        </div>
+                                        <!--/w-category-->
+                                    </div>
+
+                                    <!-- <script type="text/javascript">
+                                        $(document).ready(function () {
+                                            var zindex = $("#smv_con_20_51").css("z-index");
+                                            var con_20_51_parentSmvIndex = 0;
+                                            var con_20_51_parentSmv = $("");
+                                            $('#category_con_20_51').find('.w-category-list li').hover(function () {
+                                                $("#smv_con_20_51").css("z-index", 999);
+                                                if ($("#smv_con_20_51").parent().hasClass("smAreaC")) {
+                                                    con_20_51_parentSmv = $("#smv_con_20_51").parents().filter(function (index) {
+                                                        return $(this).attr('iscontainer') == "True";
+                                                    })
+                                                }
+                                                $(this).children('ul').show();
+                                                $(this).focus().addClass('active')
+                                            }, function () {
+                                                $(this).children('ul').hide();
+                                                $(this).focus().removeClass('active')
+                                            });
+                                            if ("Prev" != "Design") {
+                                                $('#category_con_20_51').find('.w-category-list li').click(function () {
+                                                    $('#category_con_20_51').find('.w-category-list li').removeClass("on");
+                                                    $(this).addClass('on');
+                                                    if ("Prev" != "Design") {
+                                                        if ("_blankpage" === "_blankpage") {
+                                                            var url = $(this).attr("data-url");
+                                                            window.location.href = url;
+                                                        }
+                                                    }
+                                                    return false;
+                                                });
+                                            }
+                                            var length = $("#smv_con_20_51").find(".w-category-list-item").length;
+                                            $("#smv_con_20_51").find(".w-category-list-item").css("width", (100 / length) + "%");
+                                            SetCategoryStyleForPc('category_con_20_51');
+                                            con_20_51_resize();
+                                        });
+                                        function con_20_51_resize() {
+                                            var $control = $("#smv_con_20_51");
+                                            var width = $control.width();
+                                            var height = $control.height();
+                                            var $list = $control.find(".w-category-list .w-category-list-item");
+                                            var listCount = $list.length;
+                                            var topBorder = parseInt($control.find(".w-category").css("border-top-width"));
+                                            var leftBorder = parseInt($control.find(".w-category").css("border-left-width"));
+                                            var rightBorder = parseInt($control.find(".w-category").css("border-right-width"));
+                                            var bottomBorder = parseInt($control.find(".w-category").css("border-bottom-width"));
+                                            //分割线边框
+                                            var lineBoder = parseInt($list.css("border-bottom-width"));
+                                            //宽高综合边框和分割线的宽度
+                                            $control.css("height", parseInt(height) + topBorder + bottomBorder + "px");
+                                            $control.css("width", parseInt(width) + leftBorder + rightBorder + "px");
+                                            $control.find(".w-category").css("height", height + "px");
+                                            $control.find(".w-category").css("width", width + "px");
+                                            $control.find(".w-category-list-item").css("width", (100 / listCount) + "%");
+                                            $control.find(".w-category a").css("line-height", height + "px").css("height", height + "px");
+                                        }
+                                    </script> -->
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    var zindex = $("#smv_con_20_51").css("z-index");
+                                    var con_20_51_parentSmvIndex = 0;
+                                    var con_20_51_parentSmv = $("");
+                                    $('#category_con_20_51').find('.w-category-list li').hover(function () {
+                                        $("#smv_con_20_51").css("z-index", 999);
+                                        if ($("#smv_con_20_51").parent().hasClass("smAreaC")) {
+                                            con_20_51_parentSmv = $("#smv_con_20_51").parents().filter(function (index) {
+                                                return $(this).attr('iscontainer') == "True";
+                                            })
+                                        }
+                                        $(this).children('ul').show();
+                                        $(this).focus().addClass('active')
+                                    }, function () {
+                                        $(this).children('ul').hide();
+                                        $(this).focus().removeClass('active')
+                                    });
+                                    if ("Prev" != "Design") {
+                                        $('#category_con_20_51').find('.w-category-list li').click(function () {
+                                            $('#category_con_20_51').find('.w-category-list li').removeClass("on");
+                                            $(this).addClass('on');
+                                            if ("Prev" != "Design") {
+                                                if ("_blankpage" === "_blankpage") {
+                                                    var url = $(this).attr("data-url");
+                                                    window.location.href = url;
+                                                }
+                                            }
+                                            return false;
+                                        });
+                                    }
+                                    var length = $("#smv_con_20_51").find(".w-category-list-item").length;
+                                    $("#smv_con_20_51").find(".w-category-list-item").css("width", (100 / length) + "%");
+                                    SetCategoryStyleForPc('category_con_20_51');
+                                    con_20_51_resize();
+                                });
+                                function con_20_51_resize() {
+                                    var $control = $("#smv_con_20_51");
+                                    var width = $control.width();
+                                    var height = $control.height();
+                                    var $list = $control.find(".w-category-list .w-category-list-item");
+                                    var listCount = $list.length;
+                                    var topBorder = parseInt($control.find(".w-category").css("border-top-width"));
+                                    var leftBorder = parseInt($control.find(".w-category").css("border-left-width"));
+                                    var rightBorder = parseInt($control.find(".w-category").css("border-right-width"));
+                                    var bottomBorder = parseInt($control.find(".w-category").css("border-bottom-width"));
+                                    //分割线边框
+                                    var lineBoder = parseInt($list.css("border-bottom-width"));
+                                    //宽高综合边框和分割线的宽度
+                                    $control.css("height", parseInt(height) + topBorder + bottomBorder + "px");
+                                    $control.css("width", parseInt(width) + leftBorder + rightBorder + "px");
+                                    $control.find(".w-category").css("height", height + "px");
+                                    $control.find(".w-category").css("width", width + "px");
+                                    $control.find(".w-category-list-item").css("width", (100 / listCount) + "%");
+                                    $control.find(".w-category a").css("line-height", height + "px").css("height", height + "px");
+                                }
+                            </script>
+
+                            <!-- 内容 -->
                             <div id="smv_con_3_30" ctype="listproduct" class="esmartMargin smartAbs " cpid="5413"
                                 cstyle="Style2" ccolor="Item0" areaId="Main" isContainer="False" pvid="" tareaId="Main"
                                 re-direction="all" daxis="All" isdeletable="True"
-                                style="height: 1976px; width: 973px; left: 13px; top: 570px;z-index:4;">
+                                style="height: 1976px; width: 973px; left: 13px; top: 580px;z-index:4;">
                                 <div class="yibuFrameContent con_3_30  listproduct_Style2  " style="overflow:hidden;;">
                                     <div class="w-list xn-resize">
                                         <ul class="w-list-ul" id="ulList_con_3_30" data-title-autolines="1"
@@ -268,18 +461,18 @@
                                         }
                                         callback_con_3_30();
                                     </script>
-                                    <!-- <div style="display:none" id='pager_con_3_30' jp-htmlid='con_3_30'
-                                        class='xn-pager xn-resize' jp-style='Style1_Item0' jp-color='0'
-                                        jp-align='center' jp-enable='true' jp-device='pc' jp-first='首页' jp-prev='上一页'
-                                        jp-next='下一页' jp-last='尾页' jp-more='查看更多' jp-goto='跳转到' jp-go='GO'
-                                        jp-totalpages='1' jp-totalcounts='17' jp-pagesize='20' jp-currentpage='1'
-                                        jp-vpage='5' jp-listtype='product' jp-cid='0' jp-eid='-6012,-6013,-6014,-6015'
-                                        jp-datestyle='yyyy-MM-dd' jp-orderbyfield='createtime' jp-orderbytype='desc'
-                                        jp-skey='' jp-templateid='0' jp-postdata='' jp-callback='callback_con_3_30'
-                                        jp-es='false' jp-localload='0'>
+                                    <div></div>
+                                    <!-- <div id='pager_con_3_30' jp-htmlid='con_3_30' class='xn-pager xn-resize'
+                                        jp-style='Style1_Item0' jp-color='0' jp-align='center' jp-enable='true'
+                                        jp-device='pc' jp-first='首页' jp-prev='上一页' jp-next='下一页' jp-last='尾页'
+                                        jp-more='查看更多' jp-goto='跳转到' jp-go='GO' jp-totalpages='3' jp-totalcounts='17'
+                                        jp-pagesize='6' jp-currentpage='1' jp-vpage='5' jp-listtype='product' jp-cid='0'
+                                        jp-eid='-6012,-6013,-6014,-6015' jp-datestyle='yyyy-MM-dd'
+                                        jp-orderbyfield='createtime' jp-orderbytype='desc' jp-skey='' jp-templateid='0'
+                                        jp-postdata='' jp-callback='callback_con_3_30' jp-es='false' jp-localload='0'>
                                     </div>
-                                    <script>$(function () { xnPager('pager_con_3_30'); });</script>
-                                    <script type="text/template" id="listTemplate_con_3_30">
+                                    <script>$(function () { xnPager('pager_con_3_30'); });</script> -->
+                                    <!-- <script type="text/template" id="listTemplate_con_3_30">
                                         <li class="w-list-item f-clearfix">
                                             <a href="$data.LinkUrl" target="_self" class="w-list-link">
                                                 <div class="w-list-pic">

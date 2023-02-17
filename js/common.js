@@ -49,7 +49,7 @@ function init(pageName) {
                     "href": "/lxwm/"
                 },
                 {
-                    "title": "English",
+                    "title": "EN",
                     "href": "javascript:changeLanguage();"
                 }
             ],
@@ -64,111 +64,131 @@ function init(pageName) {
                 "category": [
                     {
                         "name": "boat",
-                        "title": "船罩",
+                        "title": "船罩系列",
                         "img": "//s2.loli.net/2023/02/15/RMfImPYZ8TDX2rQ.jpg",
                         "products": [
                             {
-                                "img": "//s2.loli.net/2023/02/17/G5qalcKQ39VX6Mm.jpg",
-                                "title": "T顶船罩"
+                                "title": "T顶船罩",
+                                "img": "//s2.loli.net/2023/02/17/G5qalcKQ39VX6Mm.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/sMLDJU8QcOCeNVp.jpg",
-                                "title": "皮艇罩"
+                                "title": "皮艇罩",
+                                "img": "//s2.loli.net/2023/02/17/sMLDJU8QcOCeNVp.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/xBh8uRqkXbZTy4F.jpg",
-                                "title": "船罩"
+                                "title": "船罩",
+                                "img": "//s2.loli.net/2023/02/17/xBh8uRqkXbZTy4F.jpg"
                             }
                         ]
                     },
                     {
                         "name": "rv",
-                        "title": "房车罩",
+                        "title": "房车罩系列",
                         "img": "//s2.loli.net/2023/02/15/jn5oqOV6wayxdph.jpg",
                         "products": [
                             {
-                                "img": "//s2.loli.net/2023/02/17/tRW4HBxzvQfIiDp.jpg",
-                                "title": "A型房车罩"
+                                "title": "A型房车罩",
+                                "img": "//s2.loli.net/2023/02/17/tRW4HBxzvQfIiDp.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/FkCW7m1S5fxsjMK.jpg",
-                                "title": "B型房车罩"
+                                "title": "B型房车罩",
+                                "img": "//s2.loli.net/2023/02/17/dcVKDUjO2G4prtF.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/rY5RaQSep3AiGqD.jpg",
-                                "title": "C型房车罩"
+                                "title": "C型房车罩",
+                                "img": "//s2.loli.net/2023/02/17/rY5RaQSep3AiGqD.jpg"
                             }
                         ]
                     },
                     {
                         "name": "patio",
-                        "title": "家具罩",
+                        "title": "家具罩系列",
                         "img": "//s2.loli.net/2023/02/15/Y9oJIqyfUmGh5BC.jpg",
                         "products": [
                             {
-                                "img": "//s2.loli.net/2023/02/17/zYst62VMrwTObxu.jpg",
-                                "title": "收纳包"
+                                "title": "收纳包",
+                                "img": "//s2.loli.net/2023/02/17/zYst62VMrwTObxu.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/BaQ8zlteh26VbHS.jpg",
-                                "title": "烤架罩"
+                                "title": "烤架罩",
+                                "img": "//s2.loli.net/2023/02/17/BaQ8zlteh26VbHS.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/1b3hBr45xFecLy2.jpg",
-                                "title": "烤炉罩"
+                                "title": "烤炉罩",
+                                "img": "//s2.loli.net/2023/02/17/1b3hBr45xFecLy2.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/4EDQ1I6q3Rn8cfw.jpg",
-                                "title": "躺椅罩"
+                                "title": "躺椅罩",
+                                "img": "//s2.loli.net/2023/02/17/4EDQ1I6q3Rn8cfw.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/RMPL5ONsXupqoB9.jpg",
-                                "title": "靠椅罩"
+                                "title": "靠椅罩",
+                                "img": "//s2.loli.net/2023/02/17/RMPL5ONsXupqoB9.jpg"
+                            },
+                            {
+                                "title": "圆桌椅罩",
+                                "img": "//s2.loli.net/2023/02/17/yY6zKJ7GSXAilPZ.jpg"
+                            },
+                            {
+                                "title": "V型沙发罩",
+                                "img": "//s2.loli.net/2023/02/17/FQkc7VWrGSfbgwE.jpg"
+                            },
+                            {
+                                "title": "圆形立式加热器罩",
+                                "img": "//s2.loli.net/2023/02/17/xok8Be5ifpbYmLO.jpg"
                             }
                         ]
                     },
                     {
                         "name": "car",
-                        "title": "汽车罩",
+                        "title": "汽车罩系列",
                         "img": "//s2.loli.net/2023/02/15/3K9Yc8Qpu27WAzS.jpg",
                         "products": [
                             {
-                                "img": "//s2.loli.net/2023/02/17/b87mQGAJilF5CeT.jpg",
-                                "title": "汽车罩"
+                                "title": "汽车罩",
+                                "img": "//s2.loli.net/2023/02/17/b87mQGAJilF5CeT.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/UuVfmiDrOvZkgYy.jpg",
-                                "title": "车罩"
+                                "title": "车罩",
+                                "img": "//s2.loli.net/2023/02/17/UuVfmiDrOvZkgYy.jpg"
                             }
                         ]
                     },
                     {
                         "name": "bag",
-                        "title": "箱包",
+                        "title": "箱包系列",
                         "img": "//s2.loli.net/2023/02/15/d4EwvTOKf8scYxP.jpg",
                         "products": [
                             {
-                                "img": "//s2.loli.net/2023/02/17/KcRhWB9YQZ2CuJy.jpg",
-                                "title": "登山包"
+                                "title": "登山包",
+                                "img": "//s2.loli.net/2023/02/17/KcRhWB9YQZ2CuJy.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/9zAZQjg4oOmUqty.png",
-                                "title": "工具包"
+                                "title": "工具包",
+                                "img": "//s2.loli.net/2023/02/17/9zAZQjg4oOmUqty.png"
+                            },
+                            {
+                                "title": "手提包",
+                                "img": "//s2.loli.net/2023/02/17/ESVikfaoX1JsHjw.jpg"
+                            },
+                            {
+                                "title": "背包",
+                                "img": "//s2.loli.net/2023/02/17/eRzLVKQGinbFgvI.jpg"
                             }
                         ]
                     },
                     {
                         "name": "tent",
-                        "title": "帐篷",
+                        "title": "帐篷系列",
                         "img": "//s2.loli.net/2023/02/15/Ccb5jSXPgKheznW.jpg",
                         "products": [
                             {
-                                "img": "//s2.loli.net/2023/02/17/A7gKGnWT1rxYNpm.jpg",
-                                "title": "二人帐篷"
+                                "title": "二人帐篷",
+                                "img": "//s2.loli.net/2023/02/17/A7gKGnWT1rxYNpm.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/JuIfTvPtm4iFLkE.jpg",
-                                "title": "天幕"
+                                "title": "天幕",
+                                "img": "//s2.loli.net/2023/02/17/JuIfTvPtm4iFLkE.jpg"
                             }
                         ]
                     }
@@ -226,7 +246,7 @@ function init(pageName) {
                     "href": "/gywm/"
                 },
                 {
-                    "title": "Product",
+                    "title": "Products",
                     "href": "/cpzx/"
                 },
                 {
@@ -253,16 +273,16 @@ function init(pageName) {
                         "img": "//s2.loli.net/2023/02/15/RMfImPYZ8TDX2rQ.jpg",
                         "products": [
                             {
-                                "img": "//s2.loli.net/2023/02/17/G5qalcKQ39VX6Mm.jpg",
-                                "title": "T-TOP boat cover"
+                                "title": "T-TOP boat Cover",
+                                "img": "//s2.loli.net/2023/02/17/G5qalcKQ39VX6Mm.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/sMLDJU8QcOCeNVp.jpg",
-                                "title": "Kayak Cover"
+                                "title": "Kayak Cover",
+                                "img": "//s2.loli.net/2023/02/17/sMLDJU8QcOCeNVp.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/xBh8uRqkXbZTy4F.jpg",
-                                "title": "Boat Cover"
+                                "title": "Boat Cover",
+                                "img": "//s2.loli.net/2023/02/17/xBh8uRqkXbZTy4F.jpg"
                             }
                         ]
                     },
@@ -276,7 +296,7 @@ function init(pageName) {
                                 "title": "Class A RV Cover"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/FkCW7m1S5fxsjMK.jpg",
+                                "img": "//s2.loli.net/2023/02/17/dcVKDUjO2G4prtF.jpg",
                                 "title": "Class B RV Cover"
                             },
                             {
@@ -291,24 +311,36 @@ function init(pageName) {
                         "img": "//s2.loli.net/2023/02/15/Y9oJIqyfUmGh5BC.jpg",
                         "products": [
                             {
-                                "img": "//s2.loli.net/2023/02/17/zYst62VMrwTObxu.jpg",
-                                "title": "Patio Cushion and Cover Storage Bag"
+                                "title": "Patio Cushion and Cover Storage Bag",
+                                "img": "//s2.loli.net/2023/02/17/zYst62VMrwTObxu.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/BaQ8zlteh26VbHS.jpg",
-                                "title": "Kamado Ceramic Grill Cover"
+                                "title": "Kamado Ceramic Grill Cover",
+                                "img": "//s2.loli.net/2023/02/17/BaQ8zlteh26VbHS.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/1b3hBr45xFecLy2.jpg",
-                                "title": "Grill Cover"
+                                "title": "Grill Cover",
+                                "img": "//s2.loli.net/2023/02/17/1b3hBr45xFecLy2.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/4EDQ1I6q3Rn8cfw.jpg",
-                                "title": "Lounge Chair Cover"
+                                "title": "Lounge Chair Cover",
+                                "img": "//s2.loli.net/2023/02/17/4EDQ1I6q3Rn8cfw.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/RMPL5ONsXupqoB9.jpg",
-                                "title": "High Back Patio Chair Cover"
+                                "title": "High Back Patio Chair Cover",
+                                "img": "//s2.loli.net/2023/02/17/RMPL5ONsXupqoB9.jpg"
+                            },
+                            {
+                                "title": "Round Patio Table _ Chair Set Cover",
+                                "img": "//s2.loli.net/2023/02/17/yY6zKJ7GSXAilPZ.jpg"
+                            },
+                            {
+                                "title": "V-shaped sectional lounge Cover",
+                                "img": "//s2.loli.net/2023/02/17/FQkc7VWrGSfbgwE.jpg"
+                            },
+                            {
+                                "title": "Round Stand-Up Patio Heater Cover",
+                                "img": "//s2.loli.net/2023/02/17/xok8Be5ifpbYmLO.jpg"
                             }
                         ]
                     },
@@ -333,12 +365,20 @@ function init(pageName) {
                         "img": "//s2.loli.net/2023/02/15/d4EwvTOKf8scYxP.jpg",
                         "products": [
                             {
-                                "img": "//s2.loli.net/2023/02/17/KcRhWB9YQZ2CuJy.jpg",
-                                "title": "Hiking bags"
+                                "title": "Hiking bags",
+                                "img": "//s2.loli.net/2023/02/17/KcRhWB9YQZ2CuJy.jpg"
                             },
                             {
-                                "img": "//s2.loli.net/2023/02/17/9zAZQjg4oOmUqty.png",
-                                "title": "Tool Bags"
+                                "title": "Tool Bags",
+                                "img": "//s2.loli.net/2023/02/17/9zAZQjg4oOmUqty.png"
+                            },
+                            {
+                                "title": "Laptop",
+                                "img": "//s2.loli.net/2023/02/17/ESVikfaoX1JsHjw.jpg"
+                            },
+                            {
+                                "title": "Backpack",
+                                "img": "//s2.loli.net/2023/02/17/eRzLVKQGinbFgvI.jpg"
                             }
                         ]
                     },
@@ -430,7 +470,7 @@ function init(pageName) {
     document.title = data.title;
 
     // logo
-    // $("#img_smv_tem_62_9")[0].src = data.logo;
+    $("#img_smv_tem_62_9")[0].src = data.logo;
 
     // 导航
     for (let i = 0; i < data.navigation.length; i++) {
@@ -489,23 +529,31 @@ function init(pageName) {
         var products = [];
 
         for (let i = 0; i < data.cpzx.category.length; i++) {
+            var selected = '';
             if (category != undefined) {
                 if (category == data.cpzx.category[i].name) {
                     products.push(data.cpzx.category[i]);
-                    break;
+                    selected = 'on';
                 }
             } else {
                 products.push(data.cpzx.category[i]);
             }
-
+            $("#smv_con_20_51 ul").append(
+                '<li class="w-category-list-item ' + selected + '"'
+                + 'data-url="/cpzx/?category=' + data.cpzx.category[i].name + '">'
+                + '<h3 class="w-category-list-title">'
+                + '<a href="javascript:void(0);">' + data.cpzx.category[i].title + '</a>'
+                + '</h3>'
+                + '</li>');
         }
+
         let num = 0;
         for (let i = 0; i < products.length; i++) {
             for (let l = 0; l < products[i].products.length; l++) {
                 num++;
                 $("#smv_con_3_30 ul").append(
                     '<li class="w-list-item f-clearfix">'
-                    + '<a href="javascript:void(0);" target="_self" class="w-list-link">'
+                    + '<a href="/productinfo/" target="_self" class="w-list-link">'
                     + '<div class="w-list-pic">'
                     + '<img src="' + products[i].products[l].img + '"'
                     + 'class="w-listpic-in" />'
@@ -520,7 +568,7 @@ function init(pageName) {
         }
         var rows = Math.ceil(num / 3);
         console.log($("#smv_con_3_30")[0].style.width);
-        var add = (rows - 1) * 365;
+        var add = (rows - 1) * 380;
         $("#smv_con_3_30")[0].style.height = (476 + add) + "px";
         $("#smv_Main")[0].style.height = (1046 + add) + "px";
 
