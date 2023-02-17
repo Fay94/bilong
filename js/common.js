@@ -553,7 +553,7 @@ function init(pageName) {
                 num++;
                 $("#smv_con_3_30 ul").append(
                     '<li class="w-list-item f-clearfix">'
-                    + '<a href="/productinfo/" target="_self" class="w-list-link">'
+                    + '<a href="javascript:void(0);" target="_self" class="w-list-link">'
                     + '<div class="w-list-pic">'
                     + '<img src="' + products[i].products[l].img + '"'
                     + 'class="w-listpic-in" />'
